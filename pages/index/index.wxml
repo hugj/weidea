@@ -18,16 +18,43 @@
         </swiper>
     </view>
     <view class="option">
-        <view class='op-item'>整租</view>
-        <view class='op-item'>合租</view>
-        <view class='op-item'>公寓</view>
-        <view class='op-item'>小区</view>
-        <view class='op-item'>放租</view>
-        <view class='op-item'>估价</view>
-        <view class='op-item'>搬家</view>
-        <view class='op-item'>维修</view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/5.png' mode="widthFix"></image>
+            <text>整租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/6.png' mode="widthFix"></image>
+            <text>合租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/apartment.png' mode="widthFix"></image>
+            <text>公寓</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/area.png' mode="widthFix"></image>
+            <text>小区</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/let.png' mode="widthFix"></image>
+            <text>放租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/rent.png' mode="widthFix"></image>
+            <text>估价</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/move.png' mode="widthFix"></image>
+            <text>搬家</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/maintain.png' mode="widthFix"></image>
+            <text>维修</text>
+        </view>
     </view>
-    <view class='news'>新闻</view>
+    <view class='news'>
+        <image src='/images/static/news.png' mode="widthFix"></image>
+        <view class='content'></view>
+    </view>
     <view class="nav">
 
     </view>
