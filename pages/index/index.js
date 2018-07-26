@@ -16,6 +16,16 @@ Page({
     })
   },
   onLoad: function () {
+      wx.getSystemInfo({
+          success: function (res) {
+              var version = res.SDKVersion;
+              version = version.replace(/\./g, "")
+              console.log(version)
+              if (parseInt(version) < 120) {// 小于1.2.0的版本
+
+              }
+          }
+      });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
