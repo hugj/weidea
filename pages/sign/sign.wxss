@@ -19,12 +19,12 @@ page .container{
     border:1px solid blue;
     
 }
-.step .step-item{
+/* .step .step-item{
     display: none;
 }
 .step .step-item:first-child{
     display: block;
-}
+} */
 
 .step .op{
     position: fixed;

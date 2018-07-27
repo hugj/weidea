@@ -6,12 +6,15 @@
 
     <view class='step'>
         <view class='step-list'>
-            <view class='step-item'>步骤一</view>
-            <view class='step-item'>步骤二</view>
-            <view class='step-item'>步骤三</view>
-            <view class='step-item'>步骤4</view>
-            <view class='step-item'>步骤5</view>
-            <view class='step-item'>步骤6
+            <view wx:if="{{step_condition[0]}}" class='step-item' data-stepId="1">
+                
+            
+            </view>
+            <view wx:if="{{step_condition[1]}}" class='step-item' data-stepId="2">步骤二</view>
+            <view wx:if="{{step_condition[2]}}" class='step-item' data-stepId="3">步骤三</view>
+            <view wx:if="{{step_condition[3]}}" class='step-item' data-stepId="4">步骤4</view>
+            <view wx:if="{{step_condition[4]}}" class='step-item' data-stepId="5">步骤5</view>
+            <view wx:if="{{step_condition[5]}}" class='step-item' data-stepId="6">步骤6
                 <text>支付方式</text>
                 <view class='purchase'>
                     <view class='item'>微众银行</view>
@@ -23,8 +26,9 @@
             </view>
         </view>
         <view class='op'>
-            <button>prev</button>
-            <button>next</button>
+            <button wx:if="{{prev_c}}" data-stepid="{{init_step}}" catchtap='prev'>prev</button>
+            <button wx:if="{{next_c}}" data-stepid="{{init_step}}" catchtap='next'>next</button>
+         
         </view>
     </view>
 
