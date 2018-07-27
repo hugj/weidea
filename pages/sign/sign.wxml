@@ -1,0 +1,31 @@
+<!--pages/purchase/purchase.wxml-->
+<!-- 租客签约流程-->
+
+<view class='container'>
+    <view class='progress'>进度</view>
+
+    <view class='step'>
+        <view class='step-list'>
+            <view class='step-item'>步骤一</view>
+            <view class='step-item'>步骤二</view>
+            <view class='step-item'>步骤三</view>
+            <view class='step-item'>步骤4</view>
+            <view class='step-item'>步骤5</view>
+            <view class='step-item'>步骤6
+                <text>支付方式</text>
+                <view class='purchase'>
+                    <view class='item'>微众银行</view>
+                    <view class='item'>银联</view>
+                    <view class='item'>微信</view>
+                    <view class='item'>支付宝</view>
+                    <view class='item'>微租贷</view>
+                </view>
+            </view>
+        </view>
+        <view class='op'>
+            <button>prev</button>
+            <button>next</button>
+        </view>
+    </view>
+
+</view>

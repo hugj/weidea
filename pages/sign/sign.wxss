@@ -1,0 +1,33 @@
+/* pages/purchase/purchase.wxss */
+page .container{
+    width:100%;
+    height: 100%;
+}
+.container{
+    background-color: #eee;
+}
+.progress{
+    height: 20%;
+    width: 100%;
+    border:1px solid red;
+    box-sizing: border-box;
+}
+.step{
+    height:80%;
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid blue;
+    
+}
+.step .step-item{
+    display: none;
+}
+.step .step-item:first-child{
+    display: block;
+}
+
+.step .op{
+    position: fixed;
+    bottom: 25rpx;
+    display: flex;
+}

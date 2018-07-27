@@ -1,0 +1,50 @@
+<!--pages/user/user.wxml-->
+<!-- 我的（个人信息） 页面-->
+<view class='container'>
+    <view class='name'>
+        <image src='/images/static/hi.png' mode="widthFix"></image>
+        <text>又来租房，还没买房么？</text>
+    </view>
+    <view class='option'>
+        <view class='op-item'>
+            <image class='icon' src='/images/static/idcard.png' mode="widthFix"></image>
+            <text>个人资料</text>
+        </view>
+        <view class='op-item'>
+            <image class='icon' src='/images/static/heart.png'  mode="widthFix"></image>
+            <text>我的收藏</text>
+        </view>
+        <view class='op-item'>
+            <image class='icon' src='/images/static/assess.png' mode="widthFix"></image>
+            <text>我的房屋</text>
+        </view>
+        <view class='op-item'>
+            <image class='icon' src='/images/static/contract.png' mode="widthFix"></image>
+            <text>智能合约</text>
+        </view>
+    </view>
+<!--底部导航 -->
+     <view class="nav">
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/home.png" mode="widthFix"></image>
+            <text class="nav-text">首页</text>
+
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/find.png" mode="widthFix"></image>
+            <text class="nav-text">找房</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/renter.png" mode="widthFix"></image>
+            <text class="nav-text">放租</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/message.png" mode="widthFix"></image>
+            <text class="nav-text">消息</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/user.png" mode="widthFix"></image>
+            <text class="nav-text">我的</text>
+        </view>
+    </view>
+</view>

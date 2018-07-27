@@ -1,16 +1,25 @@
 {
-  "pages": [
-    "pages/housedDetail/housedDetail",
-    "pages/paymentCompleted/paymentCompleted",
+
     
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/city/index/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "green",
-    "navigationBarTitleText": "We链盟",
-    "navigationBarTextStyle": "black"
-  }
+
+    "pages": [
+        "pages/sign/sign",
+        "pages/user/user",
+        "pages/login/login",
+        "pages/personalInfo/info",
+        "pages/houseList/list",
+        "pages/index/index",
+        "pages/logs/logs"
+      "pages/housedDetail/housedDetail",
+    "pages/paymentCompleted/paymentCompleted",
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "green",
+        "navigationBarTitleText": "We链盟",
+        "navigationBarTextStyle": "black"
+    }
+
+
 }

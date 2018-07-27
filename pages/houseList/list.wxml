@@ -1,0 +1,59 @@
+<view class='container'>
+    <view class='nav'>
+        <view class='searchbar'>
+            <view class='search-icon'>
+                <image src='/images/static/search-icon.png' mode="widthFix"></image>
+            </view>
+            <view class='inputbox'>
+                <input placeholder="  请输入地址" type='text' />
+            </view>
+            <view class='location'>
+                <image src='/images/static/location.png' mode="widthFix"></image>
+            </view>
+        </view>
+        <view class='filter'>
+            <view class='filter-item'><text>整租</text></view>
+            <view class='filter-item'><text>位置</text></view>
+            <view class='filter-item'><text>日期</text></view>
+            <view class='filter-item'><text>筛选</text></view>
+        </view>
+    </view>
+
+    <view class='house-list'>
+        <view class='list-item'>
+            <view class='house-img'>
+                <image src='/images/static/house1.jpg'></image>
+            </view>
+            <view class='house-des'>
+                <text>房屋信息和价格</text>
+            </view>
+        </view>
+        <view class='list-item'>
+            <view class='house-img'>
+                <image src='/images/static/house1.jpg'></image>
+            </view>
+            <view class='house-des'>
+                <text>房屋信息和价格</text>
+            </view>
+        </view>
+        <view class='list-item'>
+            <view class='house-img'>
+                <image src='/images/static/house1.jpg'></image>
+            </view>
+            <view class='house-des'>
+                <text>房屋信息和价格</text>
+            </view>
+        </view>
+        <view class='list-item'>
+            <view class='house-img'>
+                <image src='/images/static/house1.jpg'></image>
+            </view>
+            <view class='house-des'>
+                <text>房屋信息和价格</text>
+            </view>
+        </view>
+
+
+    </view>
+
+</view>

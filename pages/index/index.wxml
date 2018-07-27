@@ -1,16 +1,24 @@
 <!--index.wxml-->
 <view class="container">
     <view class='searchbar'>
-        搜索栏
+        <view class='city'>
+            <text>城市</text>
+        </view>
+        <view class='search'>
+            <input placeholder="  请输入地址" type='text' />
+        </view>
+        <view class='map'>
+            <image src='/images/static/location.png' mode="widthFix"></image>
+        </view>
     </view>
 
     <view class='banner'>
-        <swiper indicator-dots='true' autoplay='true' interval='3000'>
+        <swiper indicator-dots='true' autoplay="true" interval='3000'>
             <swiper-item>
-                <image class="banner-img" src='/images/static/house1.jpg'></image>
+                <image class="banner-img" src='/images/static/house1.jpg' ></image>
             </swiper-item>
             <swiper-item>
-                <image class="banner-img" src='/images/static/house2.jpg'></image>
+                <image class="banner-img" src='/images/static/house2.jpg' ></image>
             </swiper-item>
             <swiper-item>
                 <image class="banner-img" src='/images/static/house3.jpg'></image>
@@ -18,17 +26,73 @@
         </swiper>
     </view>
     <view class="option">
-        <view class='op-item'>整租</view>
-        <view class='op-item'>合租</view>
-        <view class='op-item'>公寓</view>
-        <view class='op-item'>小区</view>
-        <view class='op-item'>放租</view>
-        <view class='op-item'>估价</view>
-        <view class='op-item'>搬家</view>
-        <view class='op-item'>维修</view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/5.png' mode="widthFix"></image>
+            <text>整租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/6.png' mode="widthFix"></image>
+            <text>合租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/apartment.png' mode="widthFix"></image>
+            <text>公寓</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/area.png' mode="widthFix"></image>
+            <text>小区</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/let.png' mode="widthFix"></image>
+            <text>放租</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/rent.png' mode="widthFix"></image>
+            <text>估价</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/move.png' mode="widthFix"></image>
+            <text>搬家</text>
+        </view>
+        <view class='op-item'>
+            <image class="op-icon" src='/images/static/maintain.png' mode="widthFix"></image>
+            <text>维修</text>
+        </view>
     </view>
-    <view class='news'>新闻</view>
+    <view class='news'>
+        <image src='/images/static/news.png' mode="widthFix"></image>
+        <view class='content'>
+            <view class='content-item'>
+                <text class='title'>楼市日报 |</text>
+                <text class='detail'>  7月23日，2房受欢迎，南山</text>
+            </view>
+            <view class='content-item'>
+                <text class='title'>楼市日报 |</text>
+                <text class='detail'>  7月23日，2房受欢迎，南山</text>
+            </view>
+        </view>
+    </view>
     <view class="nav">
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/home.png" mode="widthFix"></image>
+            <text class="nav-text">首页</text>
 
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/find.png" mode="widthFix"></image>
+            <text class="nav-text">找房</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/renter.png" mode="widthFix"></image>
+            <text class="nav-text">放租</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/message.png" mode="widthFix"></image>
+            <text class="nav-text">消息</text>
+        </view>
+        <view class='nav-item'>
+            <image class='nav-icon' src="/images/static/user.png" mode="widthFix"></image>
+            <text class="nav-text">我的</text>
+        </view>
     </view>
 </view>

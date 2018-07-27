@@ -1,0 +1,32 @@
+/* pages/signing/signing.wxss */
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-color: #cdad; */
+    position: relative;
+}
+
+.info-item {
+  margin-top: 15px;
+  border:1px solid #194EA0;border-radius: 15rpx;
+}
+
+.house-info-item {
+  display: flex;
+}
+
+.rent-time-item {
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+  border:1px solid #194EA0;border-radius: 15rpx;
+  display: flex;
+}
+
+.confirm-item{
+    position: fixed;
+    bottom: 0rpx;
+    width:100%;
+    height:100rpx;
+    
+}
