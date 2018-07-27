@@ -1,7 +1,4 @@
 {
-
-    
-
     "pages": [
         "pages/sign/sign",
         "pages/user/user",
@@ -9,9 +6,9 @@
         "pages/personalInfo/info",
         "pages/houseList/list",
         "pages/index/index",
-        "pages/logs/logs"
-      "pages/housedDetail/housedDetail",
-    "pages/paymentCompleted/paymentCompleted",
+        "pages/logs/logs",
+        "pages/housedDetail/housedDetail",
+        "pages/paymentCompleted/paymentCompleted"
         
     ],
     "window": {
