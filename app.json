@@ -1,5 +1,7 @@
 {
   "pages":[
+   
+    "pages/personalInfo/info",
     "pages/houseList/list",
     "pages/index/index",
     "pages/logs/logs"
