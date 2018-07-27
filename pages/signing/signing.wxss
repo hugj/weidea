@@ -11,7 +11,7 @@
   border:1px solid #194EA0;border-radius: 15rpx;
 }
 
-.input-item {
+.house-info-item {
   display: flex;
 }
 
@@ -20,9 +20,10 @@
   margin-top: 15px;
   width: 80%;
   border:1px solid #194EA0;border-radius: 15rpx;
+  display: flex;
 }
 
-.info-sub{
+.confirm-item{
     position: fixed;
     bottom: 0rpx;
     width:100%;
