@@ -1,12 +1,16 @@
 {
-  "pages":[
+  "pages": [
+    "pages/housedDetail/housedDetail",
+    "pages/paymentCompleted/paymentCompleted",
+    
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/city/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "green",
     "navigationBarTitleText": "We链盟",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

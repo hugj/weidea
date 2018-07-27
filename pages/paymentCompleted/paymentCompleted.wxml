@@ -1,0 +1,9 @@
+<!--pages/paymentCompleted.wxml-->
+<view class='text-box'>
+        支付完成
+</view>
+
+<view class="text-box" >
+      '友情提示。。。。'
+</view>
+<button bindtap="jump">jump</button>

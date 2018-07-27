@@ -1,0 +1,62 @@
+<!--pages/housedDetail.wxml-->
+<view class="container">
+    <view class='down'>
+        <image class="heart" src='/images/heart.png'></image>
+        <button class="mini-btn" type="default" size="mini">在线咨询</button>
+        <button class="mini-btn" type="default" size="mini">我要签约</button>
+    </view>
+
+    <view>
+        <image class="image-wrapper" src='/images/static/house1.jpg'></image>
+    </view>
+
+    <view class='orzzzz'>
+        房源名称
+    </view>
+
+    
+    <view class="option">
+        <view class='op-item'>价格</view>
+        <view class='op-item'>房型</view>
+        <view class='op-item'>面积</view>
+    </view>
+
+<view class='table'>
+    <view class="section-top">
+    <text>基本信息</text>
+    </view>
+      <view id="panel" class="flex-column">
+      <view class="flex-cell flex-row">
+        <text class="flex-cell flex-row">装修:</text>
+        <text class="flex-cell flex-row"> </text>
+        <text class="flex-cell flex-row">朝向:</text>
+        <text class="flex-cell flex-row"> </text>
+      </view>
+      <view class="flex-row flex-cell">
+        <text class="flex-cell flex-row">楼层:</text>
+        <text class="flex-cell flex-row"> </text>
+        <text class="flex-cell flex-row">类型:</text>
+        <text class="flex-cell flex-row"> </text>
+      </view>
+    </view>
+
+</view>
+
+    <view class='orzzzz'>
+        地址及交通
+    </view>
+
+    <view class='orzzzz'>
+        房屋配置
+    </view>
+
+    <view class='option'>
+        
+        <view class="section-top">
+          <text>为您推荐:</text>
+        </view>
+        <view class='op-item'>图</view>
+        <view class='op-item'>房型</view>
+    </view>
+
+</view>
