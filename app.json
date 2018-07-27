@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "pages": [
         "pages/sign/sign",
         "pages/user/user",
@@ -15,4 +16,19 @@
         "navigationBarTitleText": "We链盟",
         "navigationBarTextStyle": "black"
     }
+=======
+  "pages":[
+    "pages/signing/signing",
+    "pages/personalInfo/info",
+    "pages/houseList/list",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "green",
+    "navigationBarTitleText": "We链盟",
+    "navigationBarTextStyle": "black"
+  }
+>>>>>>> 249340e16296f23d7b3bcf80c36b51540962d9b2
 }
