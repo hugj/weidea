@@ -1,0 +1,15 @@
+<!-- 我要签约 -->
+<view class="container">
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="flex-item" style='border: 1px solid red'>
+        <image src='/images/static/house1.jpg' mode="widthFix" style="height: 100px;" ></image>
+      </view>
+      <!-- <view class="flex-item">
+        <image src='/images/static/house1.jpg' mode="widthFix"></image>
+      </view>
+      <view class="flex-item">
+        <image src='/images/static/house1.jpg' mode="widthFix"></image>
+      </view> -->
+    </view>
+
+</view>

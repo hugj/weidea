@@ -1,15 +1,15 @@
 {
   "pages":[
-   
+    "pages/signing/signing",
     "pages/personalInfo/info",
     "pages/houseList/list",
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "green",
     "navigationBarTitleText": "We链盟",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
