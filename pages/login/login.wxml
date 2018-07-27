@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+    <view class='welcome'>
+        <image src='/images/static/16.png' mode="widthFix"></image>
+        <text>您好，欢迎来到We链盟，请登录</text>
+    </view>
+
+    <form class='log-info'>
+        <view class='info-list'>
+            <view class='item'>
+                <input placeholder="  请输入姓名" type='text' placeholder-class="center"/>
+            </view>
+            <view class='item'>
+                <input placeholder="  请输入密码" type='text' placeholder-class="center"/>
+            </view>
+            <view class='item'>
+                <view class='log-btn'><text>登录</text></view>
+            </view>
+        </view>
+    </form>
+
+    <view class='registration'>
+        <text>还没有注册？点击立即</text>
+        <button>注册</button>
+    </view>
+
+</view>

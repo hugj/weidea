@@ -5,7 +5,7 @@
             <text>城市</text>
         </view>
         <view class='search'>
-            <input placeholder="  请输入地址" type='text'/>
+            <input placeholder="  请输入地址" type='text' />
         </view>
         <view class='map'>
             <image src='/images/static/location.png' mode="widthFix"></image>
