@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    housesNameLabel: "房屋名称:",
+    priceLabel: "价格:",
+    areaLabel: "面积:",
+    rentTimeLabel: "租期时间:",
+    startRentTimeLabel: "起租日期:",
+    endRentTimeLabel: "到租日期:",
+    confirmButtonLabel: "确认信息",
+
+    housesName: "龙海家园A栋601",
+    price: 10000,
+    area: 90,
+    startRentTime: "2018-07-27",
+    endRentTime: "2018-07-27",
   },
 
   /**
@@ -62,5 +74,15 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  /**
+   * 监控到租日期选择响应
+   */
+  bindEndRentTimeChange: function(e) {
+    //console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      endRentTime: e.detail.value
+    })
+  },
 })

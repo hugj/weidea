@@ -1,15 +1,46 @@
 <!-- 我要签约 -->
 <view class="container">
-    <view class="flex-wrp" style="flex-direction:column;">
-      <view class="flex-item" style='border: 1px solid red'>
-        <image src='/images/static/house1.jpg' mode="widthFix" style="height: 100px;" ></image>
-      </view>
-      <!-- <view class="flex-item">
-        <image src='/images/static/house1.jpg' mode="widthFix"></image>
-      </view>
+    <form class="flex-wrp" style="flex-direction:column;">
       <view class="flex-item">
-        <image src='/images/static/house1.jpg' mode="widthFix"></image>
-      </view> -->
-    </view>
+        <image src='/images/static/house1.jpg' style="height: 200px;" ></image>
+      </view>
+
+      <view class="flex-item info-item">
+        <view class="flex-item house-info-item">
+          <text>{{ housesNameLabel }}</text>
+          <input type='text' disabled='true' value="{{housesName}}" />
+        </view>
+        <view class="flex-item house-info-item">
+          <text>{{ priceLabel }}</text>
+          <input type='text' disabled='true' value="{{price}}"/>
+        </view>
+        <view class="flex-item house-info-item">
+          <text>{{ areaLabel }}</text>
+          <input type='text' disabled='true' value="{{area}}"/>
+        </view>
+      </view>
+
+      <view class="flex-item info-item" style="height: 150px;">
+      <view class="flex-item">
+        <text>{{ rentTimeLabel }}</text>
+       </view>
+       <view class="flex-item rent-time-item">
+        <text>{{ startRentTimeLabel }}</text>
+        <input type='text' disabled='true' value="{{startRentTime}}"/>
+       </view>
+        <view class="flex-item rent-time-item">
+        <text>{{ endRentTimeLabel }}</text>
+        <picker mode="date" value="{{endRentTime}}" start="2018-07-27" end="2100-09-01" bindchange="bindEndRentTimeChange">
+          <view class="picker">
+            {{endRentTime}}
+          </view>
+        </picker>
+       </view>
+      </view>
+
+      <view class="flex-item">
+        <button class="confirm-item"> 确认信息 </button>
+      </view>
+    </form>
 
 </view>
