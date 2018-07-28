@@ -5,7 +5,7 @@
                 <image src='/images/static/search-icon.png' mode="widthFix"></image>
             </view>
             <view class='inputbox'>
-                <input placeholder="  请输入地址" type='text' />
+                <input name="address" bindinput='bindAddressInput' placeholder="  请输入地址" type='text' />
             </view>
             <view class='location'>
                 <image src='/images/static/location.png' mode="widthFix"></image>
@@ -20,7 +20,15 @@
     </view>
 
     <view class='house-list'>
-        <view class='list-item' bindtap='showDetail'>
+        <view class='list-item' bindtap='showDetail' wx:for="{{houseList}}" wx:key="{{index}}" data-id="{{item.id}}">
+            <view class='house-img'>
+                <image src='/images/static/house4.jpg'></image>
+            </view>
+            <view class='house-des'>
+                <text>{{item.name}} {{item.type}} {{item.rent}}元</text>
+            </view>
+        </view>
+        <!-- <view class='list-item' bindtap='showDetail'>
             <view class='house-img'>
                 <image src='/images/static/house1.jpg'></image>
             </view>
@@ -51,9 +59,7 @@
             <view class='house-des'>
                 <text>房屋信息和价格</text>
             </view>
-        </view>
-
-
+        </view> -->
     </view>
 
 </view>

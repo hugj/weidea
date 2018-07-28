@@ -17,3 +17,18 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime
 }
+
+function req(url, data, method, cb) {
+  wx.request({
+    url: url,
+    data: data,
+    method: method,
+    header: { 'Content-Type': 'application/json' },
+    success: function (res) {
+      return typeof cb == "function" && cb(res.data)
+    },
+    fail: function () {
+      return typeof cb == "function" && cb(false)
+    }
+  })
+}

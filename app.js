@@ -40,6 +40,31 @@ App({
         })
     },
     globalData: {
-        userInfo: null
+        userInfo: null,
+        //房客信息
+        tenantInfo: {
+          id: 1,
+          phone: "12345678910",
+          password: "123",
+          host: "0",
+          tenant: "1",
+          sex: "男",
+          name: "小明",
+          idnumber: "123456789",
+          bankcard: "123456789",
+        },
+        //房东信息
+        landlordInfo: {
+          id: 2,
+          phone: "12345678911",
+          password: "123",
+          host: "1",
+          tenant: "0",
+          sex: "女",
+          name: "小红",
+          idnumber: "123456788",
+          bankcard: "123456788",
+        },
+        ipAddress: "http://172.20.10.2:8080/weidea"
     }
 })

@@ -15,6 +15,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
+      console.log(options);
     },
     prev: function(event) {
         var step = event.currentTarget.dataset.stepid;
