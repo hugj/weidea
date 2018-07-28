@@ -9,9 +9,21 @@
             <text>{{houseInfo.name}}</text>
         </view>
         <view class='detail'>
-            <view>{{houseInfo.rent}}元</view>
-            <view>{{houseInfo.type}}</view>
-            <view>{{houseInfo.area}}平米</view>
+            
+            <view>
+            <text>房租\n</text>
+            <text class='detailTxt'>{{houseInfo.rent}}元/月</text>
+            </view>
+
+            <view>
+            <text>房型\n</text>
+            <text class='detailTxt'>{{houseInfo.type}}</text>
+            </view>
+
+            <view>
+            <text>建筑面积\n</text>
+            <text class='detailTxt'>{{houseInfo.area}}平米</text>
+            </view>
 
         </view>
         <view class='basic'>
@@ -34,6 +46,9 @@
         <view class='conf'>
             <view>房屋配置</view>
             <image class='configBox' src='/images/house/bed.png'></image>
+            <image class='configBox' src='/images/house/chest.png'></image>
+            <image class='configBox' src='/images/house/desk.png'></image>
+            <image class='configBox' src='/images/house/wifi.png'></image>
         </view>
 
         <view class='rec'>
