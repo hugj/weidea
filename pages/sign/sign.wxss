@@ -1,17 +1,48 @@
 /* pages/purchase/purchase.wxss */
+
+input{
+    text-align: center;
+}
 page .container{
     width:100%;
     height: 100%;
 }
 .container{
     /* background-color: #eee; */
+    /* border:1px solid red; */
+    width: 100%;
+    height: 100%;
 }
 .progress{
-    height: 10%;
+    height: 140rpx;
     width: 100%;
-    border:1px solid red;
+    /* border:1px solid green; */
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+  
 }
+
+.progress view{
+    width: 200rpx;
+    height: 100%;
+    border:1px solid red;
+    
+}
+.progress image{
+    width: 140rpx;
+    /* border:1px solid red; */
+    margin:0 30rpx 0 200rpx;
+}
+.progress text{
+    width: 200rpx;
+    border:1px solid green;
+    height: 100%;
+    
+}
+
 .step{
     height:80%;
     width:100%;  
@@ -41,34 +72,45 @@ page .container{
     flex-direction: column;
     margin: auto;
     border:1px solid #194EA0;
+    border-radius: 10rpx;
     box-sizing: border-box;
 }
 .step-item .des text{
     flex:1;
     text-indent: 15rpx;
 }
+.bold{
+    font-weight: bold;
+}
 .step-item .rent  , .sum{
     width:90%;
     margin: auto;
     margin-top:10rpx;
+    padding-top:10rpx;
     border:1px solid #194EA0;
     box-sizing: border-box;
     text-indent: 15rpx;
+    border-radius: 15rpx;
     padding-bottom: 15rpx;
 }
 
 .step-item .rent .time{
     width:70%;
-    height: 100rpx;
-    margin:15rpx auto;
+    height: 130rpx;
+    margin:20rpx auto;
     box-sizing: border-box;
     border:1px solid #194EA0;
+    border-radius: 15rpx;
     display: flex;
     flex-direction: column;
 
 }
+.step-item .rent .time text{
+    height:65rpx;
+    line-height: 65rpx;
+}
 .sum{
-    height:210rpx;
+    height:255rpx;
     display: flex;
     flex-direction: column;
     padding-bottom: 20rpx;
@@ -76,6 +118,10 @@ page .container{
 
 .indent{
     text-indent:30rpx;
+    height:60rpx;
+    line-height:60rpx;
+    /* border:1px solid red; */
+    
 }
 
 /*second*/
@@ -109,7 +155,7 @@ page .container{
     box-sizing: border-box;
     border:1px solid #194EA0;
     border-radius: 15rpx;
-    width:70%;
+    width:55%;
     height:50%;
     margin-right: 40rpx;
 }
@@ -142,6 +188,7 @@ page .container{
     height:700rpx;
     margin:10rpx auto;
     border:1px solid #194EA0;
+    border-radius: 15rpx;
     box-sizing: border-box;
 }
 
@@ -153,6 +200,7 @@ page .container{
     width:90%;
     margin:auto;
     border:1px solid #194EA0;
+    border-radius: 15rpx;
     height:700rpx;
 }
 .smart-contract .sign{
@@ -161,6 +209,7 @@ page .container{
     margin:30rpx auto;
     line-height: 100rpx;
     background-color: #194EA0;
+     border-radius: 15rpx;
     text-align: center;
     color:#fff;
 }
@@ -176,6 +225,7 @@ page .container{
     width:90%;
     margin: auto;
     height: 700rpx;
+    border-radius: 15rpx;
 }
 
 .step .op{
@@ -191,21 +241,56 @@ page .container{
     height: 700rpx;
     display: flex;
     flex-direction: column;
+    /* border:1px solid purple; */
 
 }
 .purchase .item{
-    height: 20%;
-    width:100%;
-    border: 1px solid red;
+    flex:1;
+    width:80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
 }
-
+.purchase .item image{
+    width:150rpx;
+    margin-right: 10rpx;
+    /* border:1px solid blue; */
+}
+.prev, .next{
+ border:1px solid #194EA0;
+    width:150rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-radius: 15rpx;
+    color:#fff;
+    background-color: #194EA0;
+     
+}
 .prev{
     position: fixed;
-    left:30rpx;
+    left:50rpx;
     bottom: 0px;
+    border:1px solid #194EA0;
+   
 }
 .next{
     position:fixed;
-    right: 30rpx;
+    right: 50rpx;
     bottom: 0px;
+    
+}
+
+.finish{
+    width:100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    border:1px solid #194EA0;
+    background-color: #194EA0;
+    border-radius: 15rpx;
+    text-align: center;
+    color:#fff;
+    line-height: 100rpx;
 }

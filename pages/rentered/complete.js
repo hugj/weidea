@@ -65,21 +65,8 @@ Page({
   },
 
   try:function(){
-      var self = this;
-      console.log(1111)
-      wx.request({
-          url:'https://10.39.167.41:8888/weidea/user/list/',
-          data:{
-             name:3333,
-             password:2 
-          },
-          method:'POST',
-          header: {
-              "Content-Type": "application/x-www-form-urlencoded"
-          },
-          success:function(res){
-              console.log(res.data)
-          }
+      wx.navigateTo({
+          url: '../index/index'
       })
   }
 })

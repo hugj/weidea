@@ -19,11 +19,11 @@ Page({
     prev: function(event) {
         var step = event.currentTarget.dataset.stepid;
         var state = [0, 0, 0, 0, 0, 0];
-        console.log(step)
+        // console.log(step)
         state[step - 1] = 1;
-        console.log(state)
+        // console.log(state)
         this.setData({
-            step_condition: state
+            step_condition: state,
         })
         if (step-1 <= 1) {
             this.setData({
@@ -38,31 +38,38 @@ Page({
            
             this.setData({ next_c: true })
 
-            console.log(this.data)
+           
         }
+        console.log(this.data.step_condition)
     },
     next: function(event) {
         var step = event.currentTarget.dataset.stepid;
         var state = [0, 0, 0, 0, 0, 0];
         state[step] = 1;
         this.setData({
-            step_condition: state
-        })
-        this.setData({
-            init_step: step
+            step_condition: state,
+        
         })
         if(step+1>1){
-            console.log("hei");
+            // console.log("hei");
             this.setData({prev_c:true});
         }
         if (step+1== 6) {
             this.setData({
-                next_c: false
+                next_c: false,
+                prev_c:false
             })
         } else {
             this.setData({
-                init_step: step + 1
+                init_step: step+1
             })
         }
+        console.log(this.data.step_condition)
+    },
+
+    toSuccess:function(){
+        wx.navigateTo({
+            url: '../rentered/complete'
+        })
     }
 })
