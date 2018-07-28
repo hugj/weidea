@@ -221,12 +221,15 @@ page .container{
     margin: 10prx 0;
    
 }
-.confirm textarea{
-    border:1px solid #194EA0;
+.confirm{
+   background-color: #fff;
+     box-shadow: 0 3px 3px 1px #ddd;
+    padding:20rpx;
     width:90%;
     margin: auto;
     height: 700rpx;
     border-radius: 15rpx;
+    box-sizing: border-box;
 }
 
 .step .op{

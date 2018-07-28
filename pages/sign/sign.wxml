@@ -138,7 +138,7 @@
         <view wx:if="{{step_condition[5]}}" class='step-item' data-stepId="6">
           <view class='progress'>
             <!-- <view> -->
-            <image src='/images/static/17.png' mode='widthFix'></image>完 成 支 付
+            <image src='/images/static/17.png' mode='widthFix'></image>支    付
             <!-- </view> -->
 
           </view>
@@ -160,13 +160,15 @@
               <text style='width:400rpx;text-indent:10rpx'>微信    </text>
               <radio></radio>
             </label>
-            <label class='item' style="border-top:1px solid #333;margin-top:60rpx">
+            <view style="border-top:1px solid #aaa;margin-top:60rpx;padding-top:50rpx;color:#aaa;text-indent:50rpx;">租金不够？快来一键租房</view>
+            <label class='item' >
+
               <image src='/images/static/2.png' mode='widthFix'></image>
               <text style='width:400rpx;text-indent:10rpx'>微租贷    </text>
               <radio></radio>
             </label>
           </radio-group>
-          <view class='finish' bindtap='toSuccess'>完成</view>
+          <view class='finish' bindtap='toSuccess'>完 成</view>
         </view>
       </view>
 
