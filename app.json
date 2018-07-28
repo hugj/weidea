@@ -13,7 +13,8 @@
         "pages/owner/owner",
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
-        "pages/publish/pub"
+        "pages/publish/pub",
+        "pages/welcome/welcome"
     ],
     "window": {
         "backgroundTextStyle": "light",
