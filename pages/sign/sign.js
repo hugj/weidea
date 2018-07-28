@@ -47,6 +47,8 @@ Page({
           "sdate": "2018-07-01",
           "edate": "2018-08-01"
         },
+        able:false,
+        image:false,
       src: ""
     },
     imgPath: '/images/static/..',
@@ -103,27 +105,33 @@ Page({
       return false;
     };
     //生成图片
+    var self =this;
     wx.canvasToTempFilePath({
       canvasId: 'canvas',
       success: function (res) {
         console.log(res.tempFilePath);
+        self.setData({
+            canvas:res.tempFilePath,
+            able:false,
+            image:true
+        })
         //存入服务器
-        wx.uploadFile({
-          url: 'a.php', //接口地址
-          filePath: res.tempFilePath,
-          name: 'file',
-          formData: { //HTTP 请求中其他额外的 form data 
-            'user': 'test'
-          },
-          success: function (res) {
-            console.log(res);
-          },
-          fail: function (res) {
-            console.log(res);
-          },
-          complete: function (res) {
-          }
-        });
+        // wx.uploadFile({
+        //   url: 'a.php', //接口地址
+        //   filePath: res.tempFilePath,
+        //   name: 'file',
+        //   formData: { //HTTP 请求中其他额外的 form data 
+        //     'user': 'test'
+        //   },
+        //   success: function (res) {
+        //     console.log(res);
+        //   },
+        //   fail: function (res) {
+        //     console.log(res);
+        //   },
+        //   complete: function (res) {
+        //   }
+        // });
       }
     })
   },
@@ -162,7 +170,7 @@ Page({
       // 使用 wx.createContext 获取绘图上下文 context
       context = wx.createCanvasContext('canvas');
       context.beginPath()
-      context.setStrokeStyle('#ffff00');
+      context.setStrokeStyle('#000000');
       context.setLineWidth(10);
       context.setLineCap('round');
       context.setLineJoin('round');
@@ -219,8 +227,15 @@ Page({
     },
 
     toSuccess:function(){
-        wx.navigateTo({
-            url: '../rentered/complete'
+        wx.redirectTo({
+            url: '../user/user'
         })
+    },
+    // 生成画布
+    showcanvas:function(){
+        this.setData({
+            "able":true
+        })
+        console.log(this.data.able)
     }
 })

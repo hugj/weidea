@@ -96,16 +96,28 @@
 
                     </view>
                     <view class='smart-contract'>
-                        <view class='write'>
-                        <canvas class="canvas"  id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
-<button type="default" bindtap="cleardraw">清除画布</button>
-<button type="default" bindtap="getimg">导出图片</button>
+                        <view class='write'></view>
+                      
+                        <view class='sign' bindtap='showcanvas'>签名</view>
+                    </view>
+                    <view class='add' wx:if="{{image}}">
+                        <image class="generate" src='{{canvas}}' mode='widthFix'></image>
+                    </view>
+                     
+                    <view class='filter' wx:if="{{able}}">
+                    </view>
+                    <view class='toshow' wx:if="{{able}}">
+                        <view class='can'>
+                       
+                            <canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+                            <view class="zbtn" bindtap='cleardraw'>清除画布</view>
+                            <view class="zbtn" bindtap='getimg'>导出图片</view>
+                            <!-- <button type="default " bindtap="cleardraw" >清除画布</button>
+                            <button type="default" bindtap="getimg">导出图片</button> -->
                         </view>
-                        
-
-                        <view class='sign'>签名</view>
                     </view>
                 </view>
+
                 <view wx:if="{{step_condition[4]}}" class='step-item' data-stepId="5">
                     <view class='progress'>
                         <!-- <view> -->
@@ -114,7 +126,10 @@
 
                     </view>
                     <view class='confirm'>
-                        <textarea>haahha</textarea>
+                        <view class='textarea'>haah</view>
+                        <view class='sig'>
+                            <image class="sig-img" src='{{canvas}}' mode='widthFix'></image>
+                        </view>
                     </view>
 
                 </view>
@@ -132,24 +147,20 @@
                             <text style='width:400rpx;text-indent:10rpx'>微众银行</text>
                             <radio></radio>
                         </label>
-                        <label class='item'>
-                            <image src='/images/static/2.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>微租贷    </text>
-                            <radio></radio>
-                        </label>
+                        
                         <label class='item'>
                             <image src='/images/static/union.png' mode='widthFix'></image>
                             <text style='width:400rpx;text-indent:10rpx'>银联    </text>
                             <radio></radio>
                         </label>
                         <label class='item'>
-                            <image src='/images/static/wechat.png' mode='widthFix'></image>
+                            <image src='/images/static/wechat1.png' mode='widthFix'></image>
                             <text style='width:400rpx;text-indent:10rpx'>微信    </text>
                             <radio></radio>
                         </label>
-                        <label class='item'>
-                            <image src='/images/static/ali.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>支付宝    </text>
+                       <label class='item' style="border-top:1px solid #333;margin-top:60rpx">
+                            <image src='/images/static/2.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>微租贷    </text>
                             <radio></radio>
                         </label>
                     </radio-group>
@@ -163,6 +174,6 @@
             <view class='next' wx:if="{{next_c}}" data-stepid="{{init_step}}" catchtap='next'>确认</view>
         </view>
 
-</form>
+    </form>
 
 </view>
