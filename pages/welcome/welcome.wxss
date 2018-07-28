@@ -9,14 +9,20 @@
     background-size:100% 100%;
     color:#fff;
 }
-
 .slogan{
-    border:1px solid #fff;
+    /* border:1px solid #fff; */
     display: flex;
     flex-direction: column;
-    margin:30rpx 20rpx;
+    padding-top:20rpx;
 }
-
+.slogan text{
+    flex:1;
+    /* border:1px solid #fff; */
+    text-indent: 30rpx;
+    line-height:55rpx;
+    font-size: 16px;
+    color:rgba(255,255,255,0.8);
+}
 .app{
     position: fixed;
     bottom:9rpx;
