@@ -1,37 +1,18 @@
-// pages/rentered/complete.js
+// pages/component/pages/map/map.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    countdownTime: 5,
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //   setTimeout(function () {
-    //       wx.redirectTo({
-    //           url: '../myContract/my',
-    //       })
-    //   }, 3000)
-    var self = this;
-        setInterval(function(){
-            
-            var newt =self.data.countdownTime -1
-            self.setData({
-                "countdownTime": newt
-            })
-            if (self.data.countdownTime==0){
-                wx.redirectTo({
-                    url: '../user/user',
-                  url: '../user/user',
-                })
-            }
-        },1000)
-    
+  
   },
 
   /**
@@ -45,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**
@@ -81,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  try:function(){
-    wx.redirectTo({
-      url: '../user/user',
-    })
-  },
+  }
 })

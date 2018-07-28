@@ -15,6 +15,7 @@
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
         "pages/publish/pub",
+        "pages/map/map",
         "pages/myContract/my"
     ],
     "window": {

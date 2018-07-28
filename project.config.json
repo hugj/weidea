@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 15,
+			"current": 16,
 			"list": [
 				{
 					"id": -1,
@@ -128,7 +128,13 @@
 				{
 					"id": -1,
 					"name": "完成签约",
-					"pathName": "pages/rentered/complete"
+					"pathName": "pages/rentered/complete",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "map",
+					"pathName": "pages/map/map"
 				}
 			]
 		}

@@ -133,8 +133,7 @@ page .container{
     text-align: center;
 }
 .info .info-item input{
-    box-sizing: border-box;
-    border:1px solid #194EA0;
+    box-sizing: border-box;z
     border-radius: 15rpx;
     width:55%;
     height:50%;

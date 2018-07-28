@@ -204,7 +204,7 @@ Page({
                 houseid: res.data
               });
               console.log(11111)
-             
+              wx.showToast({ title: '成功', icon: 'success', duration: 2000 })
               // console.log(that.data.houseInfo)
             },
             fail: function (res) {
