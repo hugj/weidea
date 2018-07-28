@@ -17,7 +17,7 @@
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "green",
+        "navigationBarBackgroundColor": "#194EA0",
         "navigationBarTitleText": "We链盟",
         "navigationBarTextStyle": "black"
     }

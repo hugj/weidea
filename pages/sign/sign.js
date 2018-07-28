@@ -1,4 +1,7 @@
 // pages/purchase/purchase.js
+const util = require('../../utils/util.js');
+var app = getApp();
+
 Page({
 
     /**
@@ -8,14 +11,55 @@ Page({
         init_step: 1,
         step_condition: [1, 0, 0, 0, 0, 0],
         prev_c:false,
-        next_c:true
+        next_c:true,
+        houseInfo: {
+          "id": 1,
+          "name": "丽湖花园一期 ",
+          "rent": 2300,
+          "wuye": 22,
+          "type": "1室1厅",
+          "area": "42.23",
+          "docration": "精装",
+          "direct": "北",
+          "louceng": 23,
+          "address": "距地铁5号线(环中线)上水径1078米",
+          "userid": 1,
+          "certificate": "2018-07-29 16:34:29",
+          "state": "a",
+          "sdate": "2018-07-01",
+          "edate": "2018-08-01"
+        },
     },
     imgPath: '/images/static/..',
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-      console.log(options);
+      //console.log(options);
+      //调用房屋详情接口
+      var that = this;
+      wx.request({
+        url: app.globalData.ipAddress + '/house/detail',
+        data: {
+          houseid: options.houseid,
+        },
+        method: "GET",
+        header: {
+          'content-type': 'application/json'
+        },
+        success: function (res) {
+          //console.log(res);
+          that.setData({
+            houseInfo: res.data,
+          })
+        },
+        fail: function (res) {
+          console.log(res)
+        },
+      });
+      this.setData({
+        tenantInfo: app.globalData.tenantInfo,
+      });
     },
     prev: function(event) {
         var step = event.currentTarget.dataset.stepid;

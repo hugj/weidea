@@ -18,22 +18,22 @@
                         <image src='/images/static/house1.jpg'></image>
                     </view>
                     <view class='des'>
-                        <text>房屋名称：</text>
-                        <text>面积：</text>
-                        <text>价格：</text>
+                        <text>房屋名称：{{houseInfo.name}}</text>
+                        <text>面积：{{houseInfo.area}}平米</text>
+                        <text>价格：{{houseInfo.rent}}</text>
                     </view>
                     <view class='rent'>
                         <text class='bold'>租期时间</text>
                         <view class='time'>
-                            <text>起租时间</text>
-                            <text>到租日期</text>
+                            <text>起租时间:{{houseInfo.sdate}}</text>
+                            <text>到租日期:{{houseInfo.edate}}</text>
                         </view>
                     </view>
                     <view class='sum'>
                         <text class='bold'>应付款项</text>
-                        <text class='indent'>租金：3000/月</text>
-                        <text class='indent'>物业：150/月</text>
-                        <text class='indent'>总计：3150/月</text>
+                        <text class='indent'>租金：{{houseInfo.rent}}元/月</text>
+                        <text class='indent'>物业：150元/月</text>
+                        <text class='indent'>总计：{{houseInfo.rent+150}}/月</text>
                     </view>
                 </view>
                 <!--第二版-->
@@ -47,29 +47,29 @@
                     <view class='info'>
                         <view class='name info-item'>
                             <text>姓名</text>
-                            <input type='text'>
+                            <input type='text' value='{{tenantInfo.name}}'>
                             </input>
                         </view>
                         <view class='gender info-item'>
                             <text>性别</text>
                             <radio-group>
                                 <label class="radio">
-                                    <radio value="{{item.name}}" checked="{{item.checked}}" />男
-
+                                    <radio value="{{item.name}}" checked="{{tenantInfo.sex=='男'}}" />
+                                    男
                                 </label>
                                 <label class="radio">
-                                    <radio value="{{item.name}}" checked="{{item.checked}}" />女
-
+                                    <radio value="{{item.name}}" checked="{{tenantInfo.sex=='女'}}" />
+                                    女
                                 </label>
                             </radio-group>
                         </view>
                         <view class="IDcard info-item">
                             <text>身份证</text>
-                            <input type='text'></input>
+                            <input type='text' value="{{tenantInfo.idnumber}}"></input>
                         </view>
                         <view class='tel info-item'>
                             <text>电话号码</text>
-                            <input type='text'></input>
+                            <input type='text' maxlength='30' value="{{tenantInfo.phone}}"></input>
                         </view>
                     </view>
                 </view>
