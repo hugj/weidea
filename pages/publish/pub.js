@@ -202,10 +202,13 @@ Page({
               // var data = res.data
               that.setData({
                 houseid: res.data
-              })
+              });
+              console.log(11111)
+             
               // console.log(that.data.houseInfo)
             },
             fail: function (res) {
+                console.log(22222)
               console.log(res)
               
             }
