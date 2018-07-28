@@ -15,7 +15,7 @@
     <view class='banner'>
         <swiper indicator-dots='true' autoplay="true" interval='3000'>
             <swiper-item>
-                <image class="banner-img" src='/images/static/house1.jpg' ></image>
+                <image class="banner-img" src='/images/static/logo1.jpg' ></image>
             </swiper-item>
             <swiper-item>
                 <image class="banner-img" src='/images/static/house2.jpg' ></image>

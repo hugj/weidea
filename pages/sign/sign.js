@@ -41,7 +41,7 @@ Page({
           "direct": "北",
           "louceng": 23,
           "address": "距地铁5号线(环中线)上水径1078米",
-          "userid": 1,
+          "idnumber": "123456788",
           "certificate": "2018-07-29 16:34:29",
           "state": "a",
           "sdate": "2018-07-01",

@@ -68,5 +68,11 @@ Page({
         wx.redirectTo({
             url: "../index/index"
         });
+    },
+    toContract:function(){
+        wx.navigateTo({
+            url: "../myContract/my"
+        });
     }
+    
 })

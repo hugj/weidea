@@ -2,10 +2,12 @@
 
 input{
     text-align: center;
+    color:#999;
 }
 page .container{
     width:100%;
     height: 100%;
+    background-color: #efefef;
 }
 .container{
     /* background-color: #eee; */
@@ -35,6 +37,7 @@ page .container{
     width: 140rpx;
     /* border:1px solid red; */
     margin:0 30rpx 0 200rpx;
+    /* border-radius: 15rpx; */
 }
 .progress text{
     width: 200rpx;
@@ -46,6 +49,7 @@ page .container{
 .step{
     height:80%;
     width:100%;  
+    font-size: 14px;
 }
 .step-item{
     width:100%;
@@ -67,13 +71,17 @@ page .container{
 }
 .step-item .des{
     width:90%;
-    height:200rpx;
+    height:150rpx;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    border:1px solid #194EA0;
+    margin:40rpx auto;
+    /* border:1px solid #194EA0; */
     border-radius: 10rpx;
     box-sizing: border-box;
+    background-color: #fff;
+    padding: 10rpx 10rpx;
+    box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
+
 }
 .step-item .des text{
     flex:1;
@@ -85,13 +93,15 @@ page .container{
 .step-item .rent  , .sum{
     width:90%;
     margin: auto;
-    margin-top:10rpx;
-    padding-top:10rpx;
-    border:1px solid #194EA0;
+    margin-top:40rpx;
+    padding:15rpx;
+    /* border:1px solid #194EA0; */
     box-sizing: border-box;
     text-indent: 15rpx;
     border-radius: 15rpx;
     padding-bottom: 15rpx;
+    background-color: #fff;
+     box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
 }
 
 .step-item .rent .time{
@@ -99,28 +109,39 @@ page .container{
     height: 130rpx;
     margin:20rpx auto;
     box-sizing: border-box;
-    border:1px solid #194EA0;
+    /* border:1px solid #194EA0; */
     border-radius: 15rpx;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
 }
+.step-item .rent{
+    height: 170rpx;
+    /* border:1px solid #194EA0; */
+    display: flex;
+    flex-direction: column;
+}
 .step-item .rent .time text{
-    height:65rpx;
-    line-height: 65rpx;
+    height:80rpx;
+    line-height:80rpx;
+    /* border:1px solid red; */
+    margin-top:-30rpx;
 }
 .sum{
-    height:255rpx;
+    height:220rpx;
     display: flex;
     flex-direction: column;
     padding-bottom: 20rpx;
+   
 }
 
 .indent{
     text-indent:30rpx;
-    height:60rpx;
-    line-height:60rpx;
+    height:50rpx;
+    line-height:50rpx;
     /* border:1px solid red; */
+     text-align: center;
     
 }
 
@@ -158,6 +179,7 @@ page .container{
     width:55%;
     height:50%;
     margin-right: 40rpx;
+    text-align: center;
 }
 
 .info-sub{
@@ -187,9 +209,11 @@ page .container{
     width:90%;
     height:700rpx;
     margin:10rpx auto;
-    border:1px solid #194EA0;
+    /* border:1px solid #194EA0; */
     border-radius: 15rpx;
     box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
 }
 
 /*fourth*/
@@ -199,7 +223,8 @@ page .container{
 .smart-contract .write{
     width:90%;
     margin:auto;
-    border:1px solid #194EA0;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
     border-radius: 15rpx;
     height:700rpx;
 }
@@ -221,7 +246,8 @@ page .container{
    
 }
 .confirm textarea{
-    border:1px solid #194EA0;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
     width:90%;
     margin: auto;
     height: 700rpx;
@@ -259,9 +285,9 @@ page .container{
 }
 .prev, .next{
  border:1px solid #194EA0;
-    width:150rpx;
-    height: 100rpx;
-    line-height: 100rpx;
+    width:200rpx;
+    height: 80rpx;
+    line-height: 80rpx;
     text-align: center;
     border-radius: 15rpx;
     color:#fff;
