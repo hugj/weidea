@@ -10,31 +10,13 @@
                 <view wx:if="{{step_condition[0]}}" class='step-item' data-stepId="1">
                     <view class='progress'>
                         <!-- <view> -->
-                        <image src='/images/static/18.png' mode='widthFix'></image>房 屋 详 情
+                        <image src='/images/static/18.png' mode='widthFix'></image>房 屋 登 记
                         <!-- </view> -->
 
                     </view>
-                    <view class='pic'>
-                        <image src='/images/static/house1.jpg'></image>
-                    </view>
-                    <view class='des'>
-                        <text>房屋名称：</text>
-                        <text>面积：</text>
-                        <text>价格：</text>
-                    </view>
-                    <view class='rent'>
-                        <text class='bold'>租期时间</text>
-                        <view class='time'>
-                            <text>起租时间</text>
-                            <text>到租日期</text>
-                        </view>
-                    </view>
-                    <view class='sum'>
-                        <text class='bold'>应付款项</text>
-                        <text class='indent'>租金：3000/月</text>
-                        <text class='indent'>物业：150/月</text>
-                        <text class='indent'>总计：3150/月</text>
-                    </view>
+                   <view class='det'>
+                        <view class='item'></view>
+                   </view>
                 </view>
                 <!--第二版-->
                 <view wx:if="{{step_condition[1]}}" class='step-item' data-stepId="2">

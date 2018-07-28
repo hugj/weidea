@@ -72,5 +72,13 @@ Page({
       wx.navigateTo({
           url: '../houseList/list',
       })
-  }
+  },
+
+  /**去放租 */
+    landlord:function () {
+        wx.navigateTo({
+            url: '../publish/pub',
+        })
+    },
+
 })

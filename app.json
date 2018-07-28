@@ -12,7 +12,8 @@
         "pages/paymentCompleted/paymentCompleted",
         "pages/owner/owner",
         "pages/landlord/landlord",
-        "pages/houseDetail/detail"
+        "pages/houseDetail/detail",
+        "pages/publish/pub"
     ],
     "window": {
         "backgroundTextStyle": "light",
