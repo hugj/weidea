@@ -106,7 +106,7 @@ Page({
 
   sign:function(){
       wx.navigateTo({
-          url: '../sign/sign',
+          url: '../sign/sign?houseid='+this.data.houseInfo.id,
       })
   }
 })
