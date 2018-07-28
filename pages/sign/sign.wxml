@@ -96,7 +96,12 @@
 
                     </view>
                     <view class='smart-contract'>
-                        <textarea></textarea>
+                        <view class='write'>
+                        <canvas class="canvas"  id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+<button type="default" bindtap="cleardraw">清除画布</button>
+<button type="default" bindtap="getimg">导出图片</button>
+                        </view>
+                        
 
                         <view class='sign'>签名</view>
                     </view>
