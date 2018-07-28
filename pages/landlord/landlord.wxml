@@ -9,3 +9,6 @@
     <view class='redirect' bindtap='try'>点击此处跳转，10s后自动跳转</view>
 
 </view>
+.bg{
+    width
+}

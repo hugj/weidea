@@ -5,7 +5,10 @@
         <text class='item'>告别中介</text>
         <text class='item'>开启租房新体验</text>
     </view>
-    <view>
+    <view class='app'>
         We链租房
     </view>
 </view>
+
+<!-- <image class='bg' src='/images/static/welcome.jpg'>
+</image> -->
