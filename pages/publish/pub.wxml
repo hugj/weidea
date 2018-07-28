@@ -78,7 +78,7 @@
                             <text>价格</text>
                             <input type='text' bindinput='bindHosePriceInput'></input>
                         </view>
-                        <view class='item upload'>
+                        <view class='item upload' bindtap='upload'>
                             <text>图片上传</text>
                             <image src='/images/static/camera-fill.png' mode='widthFix'></image>
                         </view>
