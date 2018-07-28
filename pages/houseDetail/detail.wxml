@@ -2,32 +2,32 @@
 
 <view class='container'>
     <view>
-        <image class="ilu" src='/images/static/house1.jpg'></image>
+        <image class="ilu" src='/images/static/house4.jpg'></image>
 
         <view class='title'>
-            <text>房屋名称</text>
+            <text>房屋名称阳光带海滨城一期 4室2厅 15000元</text>
         </view>
         <view class='detail'>
-            <view>价格</view>
-            <view>房型</view>
-            <view>面积</view>
+            <view>房租：15000元/月</view>
+            <view>房型：4室2厅2卫</view>
+            <view>建筑面积：145.2m^2</view>
         </view>
         <view class='basic'>
             <text>基本信息</text>
             <view class='angle'>
-                <view>装修</view>
-                <view>朝向</view>
-                <view>楼层</view>
-                <view>类型</view>
+                <view>装修：精装</view>
+                <view>朝向：东北</view>
+                <view>楼层：29层</view>
+                <view>类型：小区</view>
             </view>
 
         </view>
         <view class='address'>
-            <text>地址及交通</text>
+            <text>南山区，科技园，据2号线（蛇口线）科苑站779米</text>
         </view>
         <view class='conf'>
             <view>房屋配置</view>
-
+            <image class='configBox' src='/images/house/bed.png'></image>
         </view>
 
         <view class='rec'>
