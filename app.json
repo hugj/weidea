@@ -1,18 +1,18 @@
 {
-
-    
-
     "pages": [
+        "pages/rentered/complete",
         "pages/sign/sign",
         "pages/user/user",
         "pages/login/login",
         "pages/personalInfo/info",
         "pages/houseList/list",
         "pages/index/index",
-        "pages/logs/logs"
-      "pages/housedDetail/housedDetail",
-    "pages/paymentCompleted/paymentCompleted",
-        
+        "pages/logs/logs",
+        "pages/housedDetail/housedDetail",
+        "pages/paymentCompleted/paymentCompleted",
+        "pages/owner/owner",
+        "pages/landlord/landlord",
+        "pages/houseDetail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -20,6 +20,4 @@
         "navigationBarTitleText": "We链盟",
         "navigationBarTextStyle": "black"
     }
-
-
 }

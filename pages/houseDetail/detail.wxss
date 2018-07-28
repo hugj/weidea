@@ -1,0 +1,137 @@
+/* pages/houseDetail/detail.wxss */
+.container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.ilu{
+    width: 100%;
+    height:300rpx;
+}
+/*房屋名称*/
+.title{
+    width: 100%;
+    border:1px solid #194EA0;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    margin:10rpx 0;
+}
+.title text{
+    width: 100%;
+    text-align: center;
+}
+
+/*详细信息*/
+.detail{
+    width: 100%;
+    height: 120rpx;
+    /* border:1px solid red; */
+    margin:20rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail view{
+    width: 20%;
+    height: 100%;
+    border:1px solid #194EA0;
+    text-align: center;
+    line-height: 120rpx;
+}
+
+/*基本信息*/
+.basic{
+    width: 100%;
+    border: 1px solid #194EA0;
+    height: 200rpx;
+
+}
+.basic text{
+    width: 100%;
+    height: 30rpx;
+    padding:10rpx 0;
+    text-indent: 10rpx;
+}
+.basic .angle{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.basic .angle view{
+    width: 50%;
+}
+
+/*地址*/
+.address{
+    width: 100%;
+    height: 150rpx;
+    border:1px solid #194EA0;
+    margin:20rpx 0;
+
+}
+/* 配置 */
+.conf{
+    width: 100%;
+    height: 150rpx;
+    border:1px solid #194EA0;
+    margin: 20rpx 0;
+}
+/* 推荐 */
+.rec{
+    width: 100%;
+    height: 400rpx;
+    border:1px solid #194EA0;
+}
+
+.rec .case{
+    width: 100%;
+    height:300rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.case image{
+    width: 45%;
+}
+
+.case text{
+    width: 45%;
+}
+
+/* 底部 */
+.fixed{
+    width:100%;
+    height: 120rpx;
+    position:fixed;
+    bottom: 0;
+    background: #194EA0;
+    opacity: 0.95;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fixed .like{
+    width:10%;
+    height: 60%;
+    /* border:1px solid #fff; */
+}
+.fixed .like image{
+    width: 100%;
+}
+
+.fixed .contact, .fixed .sign{
+     width:25%;
+     border:1px solid #fff;
+     height:60%;
+     line-height: 72rpx;
+     box-sizing: border-box;
+     text-align: center;
+     border-radius: 5px;
+}
+

@@ -1,0 +1,52 @@
+<!--pages/houseDetail/detail.wxml-->
+
+<view class='container'>
+    <view>
+        <image class="ilu" src='/images/static/house1.jpg'></image>
+
+        <view class='title'>
+            <text>房屋名称</text>
+        </view>
+        <view class='detail'>
+            <view>价格</view>
+            <view>房型</view>
+            <view>面积</view>
+        </view>
+        <view class='basic'>
+            <text>基本信息</text>
+            <view class='angle'>
+                <view>装修</view>
+                <view>朝向</view>
+                <view>楼层</view>
+                <view>类型</view>
+            </view>
+
+        </view>
+        <view class='address'>
+            <text>地址及交通</text>
+        </view>
+        <view class='conf'>
+            <view>房屋配置</view>
+
+        </view>
+
+        <view class='rec'>
+            <text>为您推荐</text>
+            <view class="case">
+                <image src='/images/static/house2.jpg' mode='widthFix'></image>
+                <view>
+                    <text>房屋基本信息及价格</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--fixed bar-->
+   
+</view>
+ <view class='fixed'>
+        <view class='like'>
+            <image src='/images/static/heart-fill.png' mode='widthFix'></image>
+        </view>
+        <view class='contact'>在线咨询</view>
+        <view class='sign' bindtap='sign'>我要签约</view>
+    </view>

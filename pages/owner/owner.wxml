@@ -1,6 +1,4 @@
-<!--pages/purchase/purchase.wxml-->
-<!-- 租客签约流程-->
-
+<!--pages/owner/owner.wxml-->
 <view class='container'>
     <view class='progress'>进度</view>
     <form>
@@ -84,12 +82,8 @@
                 <view wx:if="{{step_condition[5]}}" class='step-item' data-stepId="6">
                     <text>支付方式</text>
                     <view class='purchase'>
-                        <view class='item'>
-                            <image ></image>
-                        微众银行</view>
-                        <view class='item'>
-                            <image src='/images/static/union.png'></image>
-                        银联</view>
+                        <view class='item'>微众银行</view>
+                        <view class='item'>银联</view>
                         <view class='item'>微信</view>
                         <view class='item'>支付宝</view>
                         <view class='item'>微租贷</view>
