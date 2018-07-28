@@ -7,19 +7,7 @@
         <view class='step'>
             <view class='step-list'>
                 <!--第一版-->
-                <view wx:if="{{step_condition[0]}}" class='step-item' data-stepId="1">
-                    <view class='progress'>
-                        <!-- <view> -->
-                        <image src='/images/static/18.png' mode='widthFix'></image>房 屋 登 记
-                        <!-- </view> -->
-
-                    </view>
-                   <view class='det'>
-                        <view class='item'></view>
-                   </view>
-                </view>
-                <!--第二版-->
-                <view wx:if="{{step_condition[1]}}" class='step-item' data-stepId="2">
+                <view wx:if="{{step_condition[0]}}" class='step-item' data-stepId="2">
                     <view class='progress'>
                         <!-- <view> -->
                         <image src='/images/static/22.png' mode='widthFix'></image>个 人 信 息
@@ -55,6 +43,49 @@
                         </view>
                     </view>
                 </view>
+                <view wx:if="{{step_condition[1]}}" class='step-item' data-stepId="1">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/18.png' mode='widthFix'></image>房 屋 登 记
+                        <!-- </view> -->
+
+                    </view>
+                    <view class='det'>
+                        <view class='item'>
+                            <text>房屋名称</text>
+                            <input type='text'></input>
+                        </view>
+                        <view class='item'>
+                            <text>房产证编号</text>
+                            <input type='text'></input>
+                            </view>
+                        <view class='item'>
+
+                            <text>户型类型</text>
+                            <input type='text'></input></view>
+                        
+                        <view class='item conf'>
+                            <text>配置</text>
+                            <view class='detail'>
+                                <image wx:for="{{conf_image}}" src='/images/house/{{item}}.png' mode='widthFix' bindtap='conf' data-id='{{index}}'></image>
+                            </view>
+                        </view>
+                        <view class='item'>
+                            <text>租期要求</text>
+                            <input type='text'></input>
+                        </view>
+                        <view class='item'>
+                            <text>价格</text>
+                            <input type='text'></input>
+                        </view>
+                        <view class='item upload'>
+                            <text>图片上传</text>
+                            <image src='/images/static/camera-fill.png' mode='widthFix'></image>
+                        </view>
+                    </view>
+                </view>
+                <!--第二版-->
+                
                 <!--第三版-->
                 <view wx:if="{{step_condition[2]}}" class='step-item' data-stepId="3">
                     <view class='progress'>
@@ -93,45 +124,9 @@
                     <view class='confirm'>
                         <textarea>haahha</textarea>
                     </view>
-
-                </view>
-                <view wx:if="{{step_condition[5]}}" class='step-item' data-stepId="6">
-                    <view class='progress'>
-                        <!-- <view> -->
-                        <image src='/images/static/17.png' mode='widthFix'></image>完 成 支 付
-                        <!-- </view> -->
-
-                    </view>
-                    <!-- <text style='margin:20rpx 150rpx;'>支付方式</text> -->
-                    <radio-group class='purchase'>
-                       <label class='item'>
-                            <image src='/images/static/webank.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>微众银行</text>       
-                            <radio ></radio>
-                       </label>
-                        <label class='item'>
-                            <image src='/images/static/2.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>微租贷    </text>
-                            <radio ></radio>
-                       </label>
-                       <label class='item'>
-                            <image src='/images/static/union.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>银联    </text>
-                            <radio ></radio>
-                       </label>
-                       <label class='item'>
-                            <image src='/images/static/wechat.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>微信    </text>
-                            <radio ></radio>
-                       </label>
-                       <label class='item'>
-                            <image src='/images/static/ali.png' mode='widthFix'></image>
-                            <text style='width:400rpx;text-indent:10rpx'>支付宝    </text>
-                            <radio ></radio>
-                       </label>
-                    </radio-group>
                     <view class='finish' bindtap='toSuccess'>完成</view>
                 </view>
+                
             </view>
             <view class='op'>
                 <view class="prev" wx:if="{{prev_c}}" data-stepid="{{init_step}}" catchtap='prev'>返回</view>

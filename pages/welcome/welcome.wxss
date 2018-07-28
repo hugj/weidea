@@ -3,4 +3,8 @@
 .container{
     width: 100%;
     height:100%;
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532771373853&di=a69125a2dfd722447246da83347f9a9e&imgtype=0&src=http%3A%2F%2Fimg.iyoucai.com%2Ffrend%2F201804%2F72CA61908FE64DE.jpg");
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+   
 }

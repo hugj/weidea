@@ -55,75 +55,56 @@ page .container{
 }
 
 /*first*/
-.step-item .pic{
-    width:100%;
-    height:20%;
-    /* border:1px solid green; */
-}
-.step-item .pic image{
-    width:90%;
-    height:200rpx;
-    margin-left:5%;
-}
-.step-item .des{
-    width:90%;
-    height:200rpx;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border:1px solid #194EA0;
-    border-radius: 10rpx;
-    box-sizing: border-box;
-}
-.step-item .des text{
-    flex:1;
-    text-indent: 15rpx;
-}
-.bold{
-    font-weight: bold;
-}
-.step-item .rent  , .sum{
-    width:90%;
-    margin: auto;
-    margin-top:10rpx;
-    padding-top:10rpx;
-    border:1px solid #194EA0;
-    box-sizing: border-box;
-    text-indent: 15rpx;
-    border-radius: 15rpx;
-    padding-bottom: 15rpx;
-}
-
-.step-item .rent .time{
-    width:70%;
-    height: 130rpx;
-    margin:20rpx auto;
-    box-sizing: border-box;
-    border:1px solid #194EA0;
-    border-radius: 15rpx;
-    display: flex;
-    flex-direction: column;
-
-}
-.step-item .rent .time text{
-    height:65rpx;
-    line-height: 65rpx;
-}
-.sum{
-    height:255rpx;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20rpx;
-}
-
-.indent{
-    text-indent:30rpx;
-    height:60rpx;
-    line-height:60rpx;
+.det{
     /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:840rpx;
+}
+.det .item{
+    width: 80%;
+    /* border:1px solid #194EA0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border:1px solid red; */
+}
+.det .item text{
+    height:100%;
+    line-height: 120rpx;
+    width: 35%;
     
 }
 
+.det .item input{
+    border:1px solid #194EA0;
+    border-radius: 15rpx;
+    width: 60%;
+}
+/* 上传图片 */
+.upload image{
+    width: 60rpx;
+}
+
+/* 房屋配置 */
+.conf{
+    display: flex;
+}
+.conf text{
+    flex: 1
+}
+.conf .detail{
+    flex:4;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.conf .detail image{
+    width: 60rpx;
+    display: block;
+}
 /*second*/
 .info{
     height: 600rpx;
