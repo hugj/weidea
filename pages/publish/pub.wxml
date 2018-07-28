@@ -53,16 +53,16 @@
                     <view class='det'>
                         <view class='item'>
                             <text>房屋名称</text>
-                            <input type='text'></input>
+                            <input type='text' bindinput='bindHouseNameInput'></input>
                         </view>
                         <view class='item'>
                             <text>房产证编号</text>
-                            <input type='text'></input>
+                            <input type='text' bindinput='bindHouseCertificateInput'></input>
                             </view>
                         <view class='item'>
 
                             <text>户型类型</text>
-                            <input type='text'></input></view>
+                            <input type='text' bindinput='bindHouseTypeInput'></input></view>
                         
                         <view class='item conf'>
                             <text>配置</text>
@@ -72,13 +72,13 @@
                         </view>
                         <view class='item'>
                             <text>租期要求</text>
-                            <input type='text'></input>
+                            <input type='text' bindinput='bindHouseRentTimeInput'></input>
                         </view>
                         <view class='item'>
                             <text>价格</text>
-                            <input type='text'></input>
+                            <input type='text' bindinput='bindHosePriceInput'></input>
                         </view>
-                        <view class='item upload'>
+                        <view class='item upload' bindtap='upload'>
                             <text>图片上传</text>
                             <image src='/images/static/camera-fill.png' mode='widthFix'></image>
                         </view>
