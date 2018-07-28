@@ -202,7 +202,8 @@ Page({
               // var data = res.data
               that.setData({
                 houseid: res.data
-              })
+              });
+              wx.showToast({ title: '成功', icon: 'success', duration: 2000 })
               // console.log(that.data.houseInfo)
             },
             fail: function (res) {
