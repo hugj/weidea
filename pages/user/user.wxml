@@ -25,19 +25,19 @@
     </view>
 <!--底部导航 -->
      <view class="nav">
-        <view class='nav-item'>
+        <view class='nav-item' bindtap='home'>
             <image class='nav-icon' src="/images/static/home.png" mode="widthFix"></image>
             <text class="nav-text">首页</text>
 
         </view>
-        <view class='nav-item'>
+        <!-- <view class='nav-item'>
             <image class='nav-icon' src="/images/static/find.png" mode="widthFix"></image>
             <text class="nav-text">找房</text>
         </view>
         <view class='nav-item'>
             <image class='nav-icon' src="/images/static/renter.png" mode="widthFix"></image>
             <text class="nav-text">放租</text>
-        </view>
+        </view> -->
         <view class='nav-item'>
             <image class='nav-icon' src="/images/static/message.png" mode="widthFix"></image>
             <text class="nav-text">消息</text>

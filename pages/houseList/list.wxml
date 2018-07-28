@@ -20,7 +20,7 @@
     </view>
 
     <view class='house-list'>
-        <view class='list-item'>
+        <view class='list-item' bindtap='showDetail'>
             <view class='house-img'>
                 <image src='/images/static/house1.jpg'></image>
             </view>

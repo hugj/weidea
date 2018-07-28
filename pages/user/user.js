@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+    home: function () {
+        wx.redirectTo({
+            url: "../index/index"
+        });
+    }
 })

@@ -26,7 +26,7 @@
         </swiper>
     </view>
     <view class="option">
-        <view class='op-item'>
+        <view class='op-item' bindtap='houseList'>
             <image class="op-icon" src='/images/static/5.png' mode="widthFix"></image>
             <text>整租</text>
         </view>
@@ -78,19 +78,19 @@
             <text class="nav-text">首页</text>
 
         </view>
-        <view class='nav-item'>
+        <!-- <view class='nav-item'>
             <image class='nav-icon' src="/images/static/find.png" mode="widthFix"></image>
             <text class="nav-text">找房</text>
         </view>
         <view class='nav-item'>
             <image class='nav-icon' src="/images/static/renter.png" mode="widthFix"></image>
             <text class="nav-text">放租</text>
-        </view>
+        </view> -->
         <view class='nav-item'>
             <image class='nav-icon' src="/images/static/message.png" mode="widthFix"></image>
             <text class="nav-text">消息</text>
         </view>
-        <view class='nav-item'>
+        <view class='nav-item' bindtap='showMy'>
             <image class='nav-icon' src="/images/static/user.png" mode="widthFix"></image>
             <text class="nav-text">我的</text>
         </view>

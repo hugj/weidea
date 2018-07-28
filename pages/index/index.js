@@ -60,5 +60,17 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  showMy:function(){
+      wx.redirectTo({
+           url:"../user/user"
+        });
+  },
+  
+  /**去房屋列表 */
+  houseList:function(){
+      wx.navigateTo({
+          url: '../houseList/list',
+      })
   }
 })

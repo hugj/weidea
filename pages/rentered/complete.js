@@ -1,4 +1,4 @@
-// pages/login/login.js
+// pages/rentered/complete.js
 Page({
 
   /**
@@ -12,35 +12,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("login::onLoad");
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log("login::onReady");
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("login::onShow");
+  
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    console.log("login::onHide");
+  
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    console.log("login::onUnload");
+  
   },
 
   /**
@@ -62,5 +62,24 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  try:function(){
+      var self = this;
+      console.log(1111)
+      wx.request({
+          url:'https://10.39.167.41:8888/weidea/user/list/',
+          data:{
+             name:3333,
+             password:2 
+          },
+          method:'POST',
+          header: {
+              "Content-Type": "application/x-www-form-urlencoded"
+          },
+          success:function(res){
+              console.log(res.data)
+          }
+      })
   }
 })
