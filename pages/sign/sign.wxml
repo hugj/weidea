@@ -65,11 +65,11 @@
                         </view>
                         <view class="IDcard info-item">
                             <text>身份证</text>
-                            <input type='text' value="{{tenantInfo.idnumber}}"></input>
+                            <input type='text' maxlength='-1' value="{{tenantInfo.idnumber}}"></input>
                         </view>
                         <view class='tel info-item'>
                             <text>电话号码</text>
-                            <input type='text' maxlength='30' value="{{tenantInfo.phone}}"></input>
+                            <input type='text' maxlength='-1' value="{{tenantInfo.phone}}"></input>
                         </view>
                     </view>
                 </view>
