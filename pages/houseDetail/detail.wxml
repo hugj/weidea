@@ -6,7 +6,7 @@
 
         <view class='title'>
 
-            <text>{{houseInfo.name}}</text>
+            <text style='font-weight:bold'>{{houseInfo.name}}</text>
         </view>
         <view class='detail'>
             
@@ -30,10 +30,10 @@
             <text>基本信息</text>
             <view class='angle'>
 
-                <view>装修:{{houseInfo.docretion}}</view>
-                <view>朝向:{{houseInfo.direct}}</view>
-                <view>楼层:{{houseInfo.louceng}}层</view>
-                <view>类型:小区</view>
+                <view>装修：{{houseInfo.docretion}}</view>
+                <view>朝向：{{houseInfo.direct}}</view>
+                <view>楼层：{{houseInfo.louceng}}层</view>
+                <view>类型：小区</view>
 
             </view>
 
@@ -44,15 +44,18 @@
 
         </view>
         <view class='conf'>
-            <view>房屋配置</view>
-            <image class='configBox' src='/images/house/bed.png'></image>
-            <image class='configBox' src='/images/house/chest.png'></image>
-            <image class='configBox' src='/images/house/desk.png'></image>
-            <image class='configBox' src='/images/house/wifi.png'></image>
+            <view style='font-weight:bold'>房屋配置</view>
+            <view class='iconlist'>
+            <image class='configBox' src='/images/house/bed1.png' mode='widthFix'></image>
+            <image class='configBox' src='/images/house/chest1.png' mode='widthFix'></image>
+            <image class='configBox' src='/images/house/desk1.png' mode='widthFix'></image>
+            <image class='configBox' src='/images/house/wifi1.png' mode='widthFix'></image>
+            <image class='configBox' src='/images/house/washing-machine1.png' mode='widthFix'></image>
+            </view>
         </view>
 
         <view class='rec'>
-            <text>为您推荐</text>
+            <text style="font-weight:bold">为您推荐</text>
             <view class="case">
                 <image src='/images/static/house2.jpg' mode='widthFix'></image>
                 <view>

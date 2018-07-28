@@ -42,7 +42,7 @@
             <image class="op-icon" src='/images/static/area.png' mode="widthFix"></image>
             <text>小区</text>
         </view>
-        <view class='op-item' bindtap='landlord'>
+        <view class='op-item' bindtap='login'>
             <image class="op-icon" src='/images/static/let.png' mode="widthFix"></image>
             <text>放租</text>
         </view>
@@ -63,12 +63,12 @@
         <image src='/images/static/news.png' mode="widthFix"></image>
         <view class='content'>
             <view class='content-item'>
-                <text class='title'>楼市日报 |</text>
-                <text class='detail'>  7月23日，2房受欢迎，南山</text>
+                <text class='title'>巨磅新闻 |</text>
+                <text class='detail' space="ensp"> We链租房开启租房新时代</text>
             </view>
             <view class='content-item'>
                 <text class='title'>楼市日报 |</text>
-                <text class='detail'>  7月23日，2房受欢迎，南山</text>
+                <text class='detail' space="ensp"> 8月1日，2房受欢迎，南山</text>
             </view>
         </view>
     </view>

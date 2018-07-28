@@ -1,6 +1,25 @@
 // pages/purchase/purchase.js
 const util = require('../../utils/util.js');
+
 var app = getApp();
+const contract = require('../sign/contract.js')
+
+// canvas 全局配置
+var context = null;// 使用 wx.createContext 获取绘图上下文 context
+var isButtonDown = false;
+var arrx = [];
+var arry = [];
+var arrz = [];
+var canvasw = 0;
+var canvash = 0;
+//获取系统信息
+wx.getSystemInfo({
+    success: function (res) {
+        canvasw = res.windowWidth;//设备宽度
+        canvash = res.windowHeight;
+    }
+});
+
 
 Page({
 
@@ -36,12 +55,16 @@ Page({
         housePrice: 0,
         houseid: "",
         /**房屋配置图片 */
-        conf_image:["bed","chest","bath","washing-machine","wifi"]
+        conf_image:["bed","chest","bath","washing-machine","wifi"],
+        able: false,
+        image: false,
     },
     imgPath: '/images/static/..',
     /**
      * 生命周期函数--监听页面加载
      */
+
+    
     onLoad: function (options) {
       this.setData({
         landlordInfo: app.globalData.landlordInfo,
@@ -202,10 +225,13 @@ Page({
               // var data = res.data
               that.setData({
                 houseid: res.data
-              })
+              });
+              console.log(11111)
+              wx.showToast({ title: '成功', icon: 'success', duration: 2000 })
               // console.log(that.data.houseInfo)
             },
             fail: function (res) {
+                console.log(22222)
               console.log(res)
               
             }

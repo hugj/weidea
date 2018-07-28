@@ -228,7 +228,7 @@ Page({
 
     toSuccess:function(){
         wx.redirectTo({
-            url: '../user/user'
+            url: '../rentered/complete'
         })
     },
     // 生成画布

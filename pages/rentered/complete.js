@@ -26,6 +26,7 @@ Page({
             })
             if (self.data.countdownTime==0){
                 wx.redirectTo({
+                    url: '../user/user',
                   url: '../user/user',
                 })
             }

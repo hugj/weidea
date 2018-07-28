@@ -23,7 +23,7 @@
                         <view class='gender info-item'>
                             <text>性别</text>
                             <radio-group>
-                                <label class="radio">
+                                <label class="radio" style='margin-right:50rpx'>
                                    <radio value="{{item.name}}" checked="{{landlordInfo.sex=='男'}}" />男
 
                                 </label>
@@ -35,11 +35,11 @@
                         </view>
                         <view class="IDcard info-item">
                             <text>身份证</text>
-                            <input type='text' maxlength='-1' value="{{landlordInfo.idnumber}}"></input>
+                            <input type='text' maxlength='-1' value="  {{landlordInfo.idnumber}}"></input>
                         </view>
                         <view class='tel info-item'>
                             <text>电话号码</text>
-                            <input type='text' maxlength='-1' value="{{landlordInfo.phone}}"></input>
+                            <input type='text' maxlength='-1' value="   {{landlordInfo.phone}}"></input>
                         </view>
                     </view>
                 </view>
@@ -96,9 +96,9 @@
                     </view>
                     <view class='contract-content'>
                         <view>
-                            <text>房屋租赁合同</text>
+                            <text style='margin-top:20rpx'>房屋租赁合同</text>
                         </view>
-                        <textarea></textarea>
+                        
                     </view>
                 </view>
                 <view wx:if="{{step_condition[3]}}" class='step-item' data-stepId="4">
@@ -109,7 +109,7 @@
 
                     </view>
                     <view class='smart-contract'>
-                        <textarea></textarea>
+                        <view></view>
 
                         <view class='sign'>签名</view>
                     </view>
