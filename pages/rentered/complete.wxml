@@ -6,6 +6,6 @@
     <view class='tips'>
         <text space="emsp">  友情提醒：为了保证合约的真实性和有效性，您的租赁智能合约已上传至We链盟，可在个人界面中进行详情查看！</text>
     </view>
-    <view class='redirect' bindtap='try'>点击此处跳转，10s后自动跳转</view>
+    <view class='redirect' bindtap='try'>点击此处跳转，<text>{{countdownTime}}</text>s后自动跳转</view>
 
 </view>

@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/welcome/welcome",
         "pages/rentered/complete",
         "pages/sign/sign",
         "pages/user/user",
@@ -13,8 +14,8 @@
         "pages/owner/owner",
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
-        "pages/publish/pub",
-        "pages/welcome/welcome"
+        "pages/publish/pub"
+        
     ],
     "window": {
         "backgroundTextStyle": "light",
