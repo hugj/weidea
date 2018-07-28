@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+    <view class='slogan'>
+        <text class='item'>链上租房</text>
+        <text class='item'>告别中介</text>
+        <text class='item'>开启租房新体验</text>
+    </view>
+    <view>
+        We链租房
+    </view>
+</view>

@@ -13,11 +13,12 @@
         "pages/owner/owner",
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
-        "pages/publish/pub"
+        "pages/publish/pub",
+        "pages/welcome/welcome"
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "green",
+        "navigationBarBackgroundColor": "#194EA0",
         "navigationBarTitleText": "We链盟",
         "navigationBarTextStyle": "black"
     }
