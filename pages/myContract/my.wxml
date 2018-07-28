@@ -1,0 +1,32 @@
+<!--pages/myContract/my.wxml-->
+
+<view class='.container'>
+    <view class='con'>
+        <view class='tips'>
+            <text class='title'>智能合约</text>
+            <text class='time'>2018-05-07 23:57:09</text>
+            <view class='valid'>已上链</view>
+        </view>
+        <view class='content'>
+        <text>甲方</text>
+        <text>乙方</text>
+        </view>
+        <view class='hash'>
+            <view class='ha-ti'>
+                <image src='/images/static/edit-fill.png' mode='widthFix'></image>
+                <text>区块链Hash</text>
+                <view>点击复制</view>
+            </view>
+            
+            <text class='code'>sjeoihgo2i3979872396rrhuisoijosgh898u393hgwo9syhightshoghoi</text>
+        </view>
+    </view>
+    <view class='warn'>
+        <view class='tit'>注意</view>
+        <text>你可以点击下面的按钮，发起终止协议，双方确认后，我们将会记录一项新数据，证明此协议已被终止（但原协议还是会永久存在于区块链之上）</text>
+    </view>
+    <view class='op'>
+        <view class='btn cancel'>终止协议</view>
+        <view class='btn share'>分享协议</view>
+    </view>
+</view>

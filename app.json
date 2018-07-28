@@ -14,8 +14,8 @@
         "pages/owner/owner",
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
-        "pages/publish/pub"
-        
+        "pages/publish/pub",
+        "pages/myContract/my"
     ],
     "window": {
         "backgroundTextStyle": "light",

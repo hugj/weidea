@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 13,
+			"current": 14,
 			"list": [
 				{
 					"id": -1,
@@ -116,7 +116,13 @@
 				{
 					"id": -1,
 					"name": "欢迎界面",
-					"pathName": "pages/welcome/welcome"
+					"pathName": "pages/welcome/welcome",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的智能合约",
+					"pathName": "pages/myContract/my"
 				}
 			]
 		}
