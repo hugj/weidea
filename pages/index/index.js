@@ -75,9 +75,9 @@ Page({
   },
 
   /**去放租 */
-    landlord:function () {
+    login:function () {
         wx.navigateTo({
-            url: '../publish/pub',
+            url: '../login/login',
         })
     },
 

@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  landlord:function(){
+      wx.navigateTo({
+          url: '../publish/pub',
+      })
   }
 })

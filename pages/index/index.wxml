@@ -42,7 +42,7 @@
             <image class="op-icon" src='/images/static/area.png' mode="widthFix"></image>
             <text>小区</text>
         </view>
-        <view class='op-item' bindtap='landlord'>
+        <view class='op-item' bindtap='login'>
             <image class="op-icon" src='/images/static/let.png' mode="widthFix"></image>
             <text>放租</text>
         </view>
