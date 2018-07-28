@@ -1,5 +1,7 @@
 /* pages/rentered/complete.wxss */
-
+view{
+    border-radius: 15rpx;
+}
 .container{
     width: 100%;
     height: 100%;

@@ -1,6 +1,7 @@
 <!--支付完成页面-->
 <view class='container'>
     <view class='show'>
+        <!-- <image src='/images/'></image> -->
         支付完成！
     </view>
     <view class='tips'>
