@@ -85,7 +85,8 @@
                         <view>
                             <text>房屋租赁合同</text>
                         </view>
-                        <textarea></textarea>
+                        
+                          <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" value="{{contract}}" />
                     </view>
                 </view>
                 <view wx:if="{{step_condition[3]}}" class='step-item' data-stepId="4">

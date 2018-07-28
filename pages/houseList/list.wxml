@@ -12,10 +12,31 @@
             </view>
         </view>
         <view class='filter'>
-            <view class='filter-item'><text>整租</text></view>
+
+    <view class="menuDownnav">
+        <view class="menuDownnav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+            <view class="menuDowncontent">整租</view>
+            <view class="menuDownicon"></view>
+        </view>
+        <view class="menuDownnav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+            <view class="menuDowncontent">位置</view>
+            <view class="menuDownicon"></view>
+        </view>
+        <view class="menuDownnav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+            <view class="menuDowncontent">日期</view>
+            <view class="menuDownicon"></view>
+        </view>
+
+        <view class="menuDownnav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+            <view class="menuDowncontent">筛选</view>
+            <view class="menuDownicon"></view>
+        </view>
+    </view>
+
+            <!-- <view class='filter-item'><text>整租</text></view>
             <view class='filter-item'><text>位置</text></view>
             <view class='filter-item'><text>日期</text></view>
-            <view class='filter-item'><text>筛选</text></view>
+            <view class='filter-item'><text>筛选</text></view> -->
         </view>
     </view>
 
