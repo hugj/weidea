@@ -238,22 +238,41 @@ page .container{
     text-align: center;
     color:#fff;
 }
-
+.smart-contract .can{
+    position: fixed;
+    bottom:500rpx;
+    border:1px solid red;
+}
 /*fifth*/
 .confirm{
     width:100%;
     margin: 10prx 0;
    
 }
-.confirm textarea{
+.confirm {
     background-color: #fff;
     box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
     width:90%;
     margin: auto;
-    height: 700rpx;
+    height: 900rpx;
     border-radius: 15rpx;
 }
 
+.textarea{
+    width:100%;
+    height:700rpx;
+}
+.sig{
+    height:200rpx;
+    position:relative;
+}
+.sig-img{
+    position:absolute;
+    right:10rpx;
+    /* border:1px solid red; */
+    width:200rpx;
+    height:200rpx;
+}
 .step .op{
     position: fixed;
     bottom: 25rpx;
@@ -325,9 +344,68 @@ page .container{
 .canvas{
   width: 100%;
   height: 680rpx;
+  /* border:1px solid blue; */
 }
 
 /* {
   "navigationBarTitleText": "画板",
   "navigationBarBackgroundColor": "#eee200"
 } */
+.toshow{
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+}
+.filter{
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* border:1px solid red; */
+    
+    background-color:#ccc;
+    filter:Alpha(Opacity=60);opacity:0.9;
+    z-index: 44;
+}
+.can{
+    width:100%;
+    background-color: #fff;
+}
+
+.zbtn{
+    border:1px solid #194EA0;
+    width:100%;
+    color:#fff;
+    height:100rpx;
+    text-align: center;
+    /* border-radius: 15rpx; */
+    margin-top:10rpx;
+    background-color: #194EA0;
+    line-height: 100rpx;
+}
+
+.add{
+    width:90%;
+    left:5%;
+    border-radius: 15rpx;
+    display: flex;
+    justify-items: center;
+    /* border:1px solid red; */
+    height:120rpx;
+    margin-top:-20rpx;
+    background-color: #fff;
+    position: fixed;
+    bottom:100rpx;
+}
+.generate{
+    width:120rpx;
+    height:120rpx;
+    margin-left:280rpx;
+    /* border :1px solid red; */
+}
