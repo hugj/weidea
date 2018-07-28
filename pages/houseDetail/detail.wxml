@@ -2,28 +2,28 @@
 
 <view class='container'>
     <view>
-        <image class="ilu" src='/images/static/house1.jpg'></image>
+        <image class="ilu" src='/images/static/house4.jpg'></image>
 
         <view class='title'>
-            <text>房屋名称</text>
+            <text>{{houseInfo.name}}</text>
         </view>
         <view class='detail'>
-            <view>价格</view>
-            <view>房型</view>
-            <view>面积</view>
+            <view>{{houseInfo.rent}}元</view>
+            <view>{{houseInfo.type}}</view>
+            <view>{{houseInfo.area}}平米</view>
         </view>
         <view class='basic'>
             <text>基本信息</text>
             <view class='angle'>
-                <view>装修</view>
-                <view>朝向</view>
-                <view>楼层</view>
-                <view>类型</view>
+                <view>装修:{{houseInfo.docretion}}</view>
+                <view>朝向:{{houseInfo.direct}}</view>
+                <view>楼层:{{houseInfo.louceng}}层</view>
+                <view>类型:小区</view>
             </view>
 
         </view>
         <view class='address'>
-            <text>地址及交通</text>
+            <text>{{houseInfo.address}}</text>
         </view>
         <view class='conf'>
             <view>房屋配置</view>

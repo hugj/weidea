@@ -46,7 +46,7 @@ Page({
     showDetail:function(e){
         // console.log(e);
         wx.navigateTo({
-            url: '../houseDetail/detail?id='+e.currentTarget.dataset.id,
+            url: '../houseDetail/detail?houseid='+e.currentTarget.dataset.id,
         })
     },
 
@@ -55,7 +55,7 @@ Page({
       // console.log(e.detail.value);
       var that = this;
       wx.request({
-        url: 'http://' + app.globalData.ipAddress + '/house/all',
+        url: app.globalData.ipAddress + '/house/all',
         data: {
           address: e.detail.value,
         },
