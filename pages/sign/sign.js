@@ -1,6 +1,7 @@
 // pages/purchase/purchase.js
 const util = require('../../utils/util.js');
 var app = getApp();
+const contract = require('./contract.js')
 
 Page({
 
@@ -8,6 +9,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        contract: contract,
         init_step: 1,
         step_condition: [1, 0, 0, 0, 0, 0],
         prev_c:false,

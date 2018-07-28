@@ -12,8 +12,29 @@ Page({
         step_condition: [1, 0, 0, 0, 0],
         prev_c: false,
         next_c: true,
-      
-
+        landlordInfo: null,
+        houseInfo: {
+          "name": "丽湖花园一期 ",
+          "rent": 2300,
+          "wuye": 22,
+          "type": "1室1厅",
+          "area": "42.23",
+          "docration": "精装",
+          "direct": "北",
+          "louceng": 23,
+          "address": "距地铁5号线(环中线)上水径1078米",
+          "idnumber": "123456788",
+          "certificate": "2018-07-29 16:34:29",
+          "state": "a",
+          "sdate": "2018-07-01",
+          "edate": "2018-08-01"
+        },
+        houseName: "",
+        houseCertificate: "",
+        houseType: "",
+        houseRentTime: "",
+        housePrice: 0,
+        houseid: "",
         /**房屋配置图片 */
         conf_image:["bed","chest","bath","washing-machine","wifi"]
     },
@@ -78,6 +99,33 @@ Page({
     },
 
     toSuccess: function () {
+        var that = this;
+        this.setData({houseInfo: {
+          id: that.data.houseid,
+          name: that.data.houseName,
+          certificate: that.data.houseCertificate,
+          type: that.data.houseType,
+          rent: that.data.housePrice,
+          idnumber: that.data.landlordInfo.idnumber,
+        }});
+        // console.log(this.data)
+        wx.request({
+          url: app.globalData.ipAddress + '/house/add',
+          data: that.data.houseInfo,
+          method: "POST",
+          header: {
+            'content-type': 'application/json'
+          },
+          success: function (res) {
+            // that.setData({
+            //   houseid: res.data
+            // })
+            console.log(res)
+          },
+          fail: function (res) {
+            console.log(res)
+          },
+        })
         wx.navigateTo({
             url: '../landlord/landlord'
         })
@@ -97,7 +145,72 @@ Page({
         this.setData({
             conf_image:conf_img
         })
-        console.log(this.data.conf_image)
-        
+        console.log(this.data.conf_image);
+    },
+
+    //监听房屋名称输入
+    bindHouseNameInput: function (e) {
+      // console.log(e.detail.value);
+      this.setData({
+        houseName: e.detail.value
+      })
+    },
+
+    //监听房产证编号输入
+    bindHouseCertificateInput: function(e) {
+      this.setData({
+        houseCertificate: e.detail.value
+      })
+    },
+
+    //监听户型类型输入
+    bindHouseTypeInput: function(e) {
+      this.setData({
+        houseType: e.detail.value
+      })
+    },
+
+    //监听租期要求输入
+    bindHouseRentTimeInput: function (e) {
+      this.setData({
+        houseRentTime: e.detail.value
+      })
+    },
+
+    //监听价格输入
+    bindHosePriceInput: function (e) {
+      this.setData({
+        housePrice: e.detail.value
+      })
+    },
+
+    //上传文件
+    upload: function () {
+      var that = this
+      wx.chooseImage({
+        success: function (res) {
+          var tempFilePaths = res.tempFilePaths
+          wx.uploadFile({
+            url: app.globalData.ipAddress + '/house/upload',
+            filePath: tempFilePaths[0],
+            name: 'file',
+            formData: {
+              'houseid': that.data.houseid
+            },
+            success: function (res) {
+              console.log(res)
+              // var data = res.data
+              that.setData({
+                houseid: res.data
+              })
+              // console.log(that.data.houseInfo)
+            },
+            fail: function (res) {
+              console.log(res)
+              
+            }
+          })
+        }
+      })
     }
 })
