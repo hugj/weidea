@@ -95,9 +95,10 @@
 
                     </view>
                     <view class='contract-content'>
-                        <view>
-                            <text style='margin-top:20rpx'>房屋租赁合同</text>
-                        </view>
+                            <!-- <text style='margin-top:20rpx'>房屋租赁合同</text> -->
+                            <scroll-view bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" value="{{contract}}">
+              <text>{{contract}}</text>
+            </scroll-view>
                         
                     </view>
                 </view>

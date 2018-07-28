@@ -178,9 +178,9 @@ page .container{
 
 }
 
-.contract-content view{
+.contract-content scroll-view{
     width:90%;
-    height:700rpx;
+    height:900rpx;
     margin:10rpx auto;
     padding:10rpx;
     /* border:1px solid #194EA0; */
