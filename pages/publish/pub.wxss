@@ -1,0 +1,296 @@
+/* pages/purchase/purchase.wxss */
+
+input{
+    text-align: center;
+}
+page .container{
+    width:100%;
+    height: 100%;
+}
+.container{
+    /* background-color: #eee; */
+    /* border:1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+.progress{
+    height: 140rpx;
+    width: 100%;
+    /* border:1px solid green; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+  
+}
+
+.progress view{
+    width: 200rpx;
+    height: 100%;
+    border:1px solid red;
+    
+}
+.progress image{
+    width: 140rpx;
+    /* border:1px solid red; */
+    margin:0 30rpx 0 200rpx;
+}
+.progress text{
+    width: 200rpx;
+    border:1px solid green;
+    height: 100%;
+    
+}
+
+.step{
+    height:80%;
+    width:100%;  
+}
+.step-item{
+    width:100%;
+    height: 90%;
+    box-sizing: border-box;
+    /* border:1px solid blue; */
+}
+
+/*first*/
+.step-item .pic{
+    width:100%;
+    height:20%;
+    /* border:1px solid green; */
+}
+.step-item .pic image{
+    width:90%;
+    height:200rpx;
+    margin-left:5%;
+}
+.step-item .des{
+    width:90%;
+    height:200rpx;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border:1px solid #194EA0;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+}
+.step-item .des text{
+    flex:1;
+    text-indent: 15rpx;
+}
+.bold{
+    font-weight: bold;
+}
+.step-item .rent  , .sum{
+    width:90%;
+    margin: auto;
+    margin-top:10rpx;
+    padding-top:10rpx;
+    border:1px solid #194EA0;
+    box-sizing: border-box;
+    text-indent: 15rpx;
+    border-radius: 15rpx;
+    padding-bottom: 15rpx;
+}
+
+.step-item .rent .time{
+    width:70%;
+    height: 130rpx;
+    margin:20rpx auto;
+    box-sizing: border-box;
+    border:1px solid #194EA0;
+    border-radius: 15rpx;
+    display: flex;
+    flex-direction: column;
+
+}
+.step-item .rent .time text{
+    height:65rpx;
+    line-height: 65rpx;
+}
+.sum{
+    height:255rpx;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20rpx;
+}
+
+.indent{
+    text-indent:30rpx;
+    height:60rpx;
+    line-height:60rpx;
+    /* border:1px solid red; */
+    
+}
+
+/*second*/
+.info{
+    height: 600rpx;
+    width: 100%;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:100rpx;
+}
+.info .info-item{
+    box-sizing: border-box;
+    width: 100%;
+    height:25%;
+    /* border:1px solid blue; */
+    /* line-height: 150rpx; */
+    display: flex;
+    align-items: center;
+
+}
+
+.info .info-item text{
+    width:30%;
+    /* border:1px solid red; */
+    padding-left:40rpx;
+    text-align: center;
+}
+.info .info-item input{
+    box-sizing: border-box;
+    border:1px solid #194EA0;
+    border-radius: 15rpx;
+    width:55%;
+    height:50%;
+    margin-right: 40rpx;
+}
+
+.info-sub{
+    position: fixed;
+    bottom: 0rpx;
+    width:100%;
+    height:100rpx;
+    
+}
+
+/*third*/
+.contract-content{
+    width: 100%;
+    height: 100%;
+    /* border:1px solid red; */
+}
+.contract-content view{
+    width:100%;
+    font-size: 18px;
+    text-align: center;
+    /* border:1px solid blue; */
+    margin-top:10rpx;
+
+}
+
+.contract-content textarea{
+    width:90%;
+    height:700rpx;
+    margin:10rpx auto;
+    border:1px solid #194EA0;
+    border-radius: 15rpx;
+    box-sizing: border-box;
+}
+
+/*fourth*/
+.smart-contract{
+    width: 100%;
+}
+.smart-contract textarea{
+    width:90%;
+    margin:auto;
+    border:1px solid #194EA0;
+    border-radius: 15rpx;
+    height:700rpx;
+}
+.smart-contract .sign{
+    width: 90%;
+    height:100rpx;
+    margin:30rpx auto;
+    line-height: 100rpx;
+    background-color: #194EA0;
+     border-radius: 15rpx;
+    text-align: center;
+    color:#fff;
+}
+
+/*fifth*/
+.confirm{
+    width:100%;
+    margin: 10prx 0;
+   
+}
+.confirm textarea{
+    border:1px solid #194EA0;
+    width:90%;
+    margin: auto;
+    height: 700rpx;
+    border-radius: 15rpx;
+}
+
+.step .op{
+    position: fixed;
+    bottom: 25rpx;
+    display: flex;
+}
+
+/*第6步*/
+.purchase{
+    width:90%;
+    margin:15rpx auto;
+    height: 700rpx;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid purple; */
+
+}
+.purchase .item{
+    flex:1;
+    width:80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.purchase .item image{
+    width:150rpx;
+    margin-right: 10rpx;
+    /* border:1px solid blue; */
+}
+.prev, .next{
+ border:1px solid #194EA0;
+    width:150rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-radius: 15rpx;
+    color:#fff;
+    background-color: #194EA0;
+     
+}
+.prev{
+    position: fixed;
+    left:50rpx;
+    bottom: 0px;
+    border:1px solid #194EA0;
+   
+}
+.next{
+    position:fixed;
+    right: 50rpx;
+    bottom: 0px;
+    
+}
+
+.finish{
+    width:100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    border:1px solid #194EA0;
+    background-color: #194EA0;
+    border-radius: 15rpx;
+    text-align: center;
+    color:#fff;
+    line-height: 100rpx;
+}

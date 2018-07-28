@@ -1,0 +1,144 @@
+<!--pages/purchase/purchase.wxml-->
+<!-- 租客签约流程-->
+
+<view class='container'>
+
+    <form>
+        <view class='step'>
+            <view class='step-list'>
+                <!--第一版-->
+                <view wx:if="{{step_condition[0]}}" class='step-item' data-stepId="1">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/18.png' mode='widthFix'></image>房 屋 登 记
+                        <!-- </view> -->
+
+                    </view>
+                   <view class='det'>
+                        <view class='item'></view>
+                   </view>
+                </view>
+                <!--第二版-->
+                <view wx:if="{{step_condition[1]}}" class='step-item' data-stepId="2">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/22.png' mode='widthFix'></image>个 人 信 息
+                        <!-- </view> -->
+
+                    </view>
+                    <view class='info'>
+                        <view class='name info-item'>
+                            <text>姓名</text>
+                            <input type='text'>
+                            </input>
+                        </view>
+                        <view class='gender info-item'>
+                            <text>性别</text>
+                            <radio-group>
+                                <label class="radio">
+                                    <radio value="{{item.name}}" checked="{{item.checked}}" />男
+
+                                </label>
+                                <label class="radio">
+                                    <radio value="{{item.name}}" checked="{{item.checked}}" />女
+
+                                </label>
+                            </radio-group>
+                        </view>
+                        <view class="IDcard info-item">
+                            <text>身份证</text>
+                            <input type='text'></input>
+                        </view>
+                        <view class='tel info-item'>
+                            <text>电话号码</text>
+                            <input type='text'></input>
+                        </view>
+                    </view>
+                </view>
+                <!--第三版-->
+                <view wx:if="{{step_condition[2]}}" class='step-item' data-stepId="3">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/20.png' style="width:100rpx" mode='widthFix'></image>合 同 确 认
+                        <!-- </view> -->
+
+                    </view>
+                    <view class='contract-content'>
+                        <view>
+                            <text>房屋租赁合同</text>
+                        </view>
+                        <textarea></textarea>
+                    </view>
+                </view>
+                <view wx:if="{{step_condition[3]}}" class='step-item' data-stepId="4">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/28.png' style="width:100rpx" mode='widthFix'></image>签署智能合约
+                        <!-- </view> -->
+
+                    </view>
+                    <view class='smart-contract'>
+                        <textarea></textarea>
+
+                        <view class='sign'>签名</view>
+                    </view>
+                </view>
+                <view wx:if="{{step_condition[4]}}" class='step-item' data-stepId="5">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/21.png' mode='widthFix'></image>确 认 合 约
+                        <!-- </view> -->
+
+                    </view>
+                    <view class='confirm'>
+                        <textarea>haahha</textarea>
+                    </view>
+
+                </view>
+                <view wx:if="{{step_condition[5]}}" class='step-item' data-stepId="6">
+                    <view class='progress'>
+                        <!-- <view> -->
+                        <image src='/images/static/17.png' mode='widthFix'></image>完 成 支 付
+                        <!-- </view> -->
+
+                    </view>
+                    <!-- <text style='margin:20rpx 150rpx;'>支付方式</text> -->
+                    <radio-group class='purchase'>
+                       <label class='item'>
+                            <image src='/images/static/webank.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>微众银行</text>       
+                            <radio ></radio>
+                       </label>
+                        <label class='item'>
+                            <image src='/images/static/2.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>微租贷    </text>
+                            <radio ></radio>
+                       </label>
+                       <label class='item'>
+                            <image src='/images/static/union.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>银联    </text>
+                            <radio ></radio>
+                       </label>
+                       <label class='item'>
+                            <image src='/images/static/wechat.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>微信    </text>
+                            <radio ></radio>
+                       </label>
+                       <label class='item'>
+                            <image src='/images/static/ali.png' mode='widthFix'></image>
+                            <text style='width:400rpx;text-indent:10rpx'>支付宝    </text>
+                            <radio ></radio>
+                       </label>
+                    </radio-group>
+                    <view class='finish' bindtap='toSuccess'>完成</view>
+                </view>
+            </view>
+            <view class='op'>
+                <view class="prev" wx:if="{{prev_c}}" data-stepid="{{init_step}}" catchtap='prev'>返回</view>
+                <view class='next' wx:if="{{next_c}}" data-stepid="{{init_step}}" catchtap='next'>确认</view>
+
+            </view>
+        </view>
+    </form>
+
+</view>
