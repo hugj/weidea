@@ -1,5 +1,6 @@
 {
     "pages": [
+      "pages/map/map",
         "pages/welcome/welcome",
         "pages/rentered/complete",
         "pages/sign/sign",
