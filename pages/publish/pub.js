@@ -34,6 +34,7 @@ Page({
         houseType: "",
         houseRentTime: "",
         housePrice: 0,
+        houseid: "",
 
         /**房屋配置图片 */
         conf_image:["bed","chest","bath","washing-machine","wifi"]
@@ -116,6 +117,9 @@ Page({
             'content-type': 'application/json'
           },
           success: function (res) {
+            // that.setData({
+            //   houseid: res.data
+            // })
             console.log(res)
           },
           fail: function (res) {
@@ -188,15 +192,18 @@ Page({
         success: function (res) {
           var tempFilePaths = res.tempFilePaths
           wx.uploadFile({
-            url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+            url: app.globalData.ipAddress + '/house/upload', //仅为示例，非真实的接口地址
             filePath: tempFilePaths[0],
             name: 'file',
             formData: {
-              'user': 'test'
+              'houseid': that.data.houseid
             },
             success: function (res) {
-              var data = res.data
-              //do something
+              console.log(res)
+              // var data = res.data
+              that.setData({
+                houseid: res.data
+              })
             }
           })
         }
