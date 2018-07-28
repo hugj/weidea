@@ -1,4 +1,7 @@
 // pages/purchase/purchase.js
+const util = require('../../utils/util.js');
+var app = getApp();
+
 Page({
 
     /**
@@ -9,6 +12,7 @@ Page({
         step_condition: [1, 0, 0, 0, 0],
         prev_c: false,
         next_c: true,
+      
 
         /**房屋配置图片 */
         conf_image:["bed","chest","bath","washing-machine","wifi"]
@@ -18,6 +22,9 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+      this.setData({
+        landlordInfo: app.globalData.landlordInfo,
+      });
     },
     prev: function (event) {
         var step = event.currentTarget.dataset.stepid;

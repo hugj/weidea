@@ -60,8 +60,6 @@ Page({
       this.setData({
         tenantInfo: app.globalData.tenantInfo,
       });
-      //TODO::日志打印
-      console.log(this.data);
     },
     prev: function(event) {
         var step = event.currentTarget.dataset.stepid;
