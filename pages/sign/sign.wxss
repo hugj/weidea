@@ -63,18 +63,21 @@ page .container{
     width:100%;
     height:20%;
     /* border:1px solid green; */
+    border-radius: 15rpx;
 }
 .step-item .pic image{
     width:90%;
     height:200rpx;
     margin-left:5%;
+    overflow: hidden;
+    border-radius: 15rpx;
 }
 .step-item .des{
     width:90%;
     height:180rpx;
     display: flex;
     flex-direction: column;
-    margin:40rpx auto;
+    margin:30rpx auto;
     /* border:1px solid #194EA0; */
     border-radius: 10rpx;
     box-sizing: border-box;
@@ -149,12 +152,17 @@ page .container{
 /*second*/
 .info{
     height: 600rpx;
-    width: 100%;
+    width: 90%;
     /* border:1px solid red; */
     display: flex;
     flex-direction:column;
     align-items: center;
+    margin: auto;
     margin-top:100rpx;
+    background-color: #fff;
+     box-shadow: 0 3px 3px 1px #ddd;
+     border-radius: 15rpx;
+
 }
 .info .info-item{
     box-sizing: border-box;
@@ -175,12 +183,11 @@ page .container{
 }
 .info .info-item input{
     box-sizing: border-box;
-    border:1px solid #194EA0;
     border-radius: 15rpx;
     width:55%;
     height:50%;
-    margin-right: 40rpx;
-    text-align: center;
+    /* margin-right: 40rpx; */
+   color:#ccc;
 }
 
 .info-sub{
@@ -189,21 +196,6 @@ page .container{
     width:100%;
     height:100rpx;
     
-}
-
-/*third*/
-.contract-content{
-    width: 100%;
-    height: 100%;
-    /* border:1px solid red; */
-}
-.contract-content view{
-    width:100%;
-    font-size: 18px;
-    text-align: center;
-    /* border:1px solid blue; */
-    margin-top:10rpx;
-
 }
 
 .contract-content scroll-view{
@@ -215,6 +207,7 @@ page .container{
     box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
+    padding:20rpx;
     /* border:1px solid red; */
 }
 
@@ -258,6 +251,8 @@ page .container{
     margin: auto;
     height: 900rpx;
     border-radius: 15rpx;
+    box-sizing: border-box;
+    padding:20rpx;
 }
 
 .textarea{
@@ -285,10 +280,13 @@ page .container{
 .purchase{
     width:90%;
     margin:15rpx auto;
-    height: 700rpx;
+    height: 850rpx;
     display: flex;
     flex-direction: column;
     /* border:1px solid purple; */
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
+    border-radius: 15rpx;
 
 }
 .purchase .item{
