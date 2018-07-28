@@ -5,14 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    countdownTime: 10,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
@@ -26,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var interval = setInterval(this._go(interval), 1000);
   },
 
   /**
@@ -68,5 +68,23 @@ Page({
       wx.navigateTo({
           url: '../index/index'
       })
-  }
+  },
+
+  _go: function (interval) {
+    var that = this;
+    return function() {
+      var countdownTime = that.data.countdownTime;
+      if (--countdownTime > 0) {
+        that.setData({
+          countdownTime: countdownTime,
+        })
+      } else {
+        clearInterval(interval);
+        wx.navigateTo({
+          url: '../index/index'
+        })
+      }
+    }
+    
+  },
 })
