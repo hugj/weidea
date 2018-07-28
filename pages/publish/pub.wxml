@@ -109,10 +109,27 @@
 
                     </view>
                     <view class='smart-contract'>
-                        <view></view>
+                        <view class='write'></view>
 
-                        <view class='sign'>签名</view>
+                        <!-- <view class='sign'>签名</view> -->
+                        <view class='sign' bindtap='showcanvas'>签名</view>
                     </view>
+
+                    <view class='add' wx:if="{{image}}">
+            <image class="generate" src='{{canvas}}' mode='widthFix'></image>
+          </view>
+
+          <view class='filter' wx:if="{{able}}">
+          </view>
+          <view class='toshow' wx:if="{{able}}">
+            <view class='can'>
+
+              <canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+              <view class="zbtn" bindtap='cleardraw'>清除画布</view>
+              <view class="zbtn" bindtap='getimg'>导出图片</view>
+              </view>
+          </view>
+
                 </view>
                 <view wx:if="{{step_condition[4]}}" class='step-item' data-stepId="5">
                     <view class='progress'>
