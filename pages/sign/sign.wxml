@@ -15,7 +15,7 @@
 
                     </view>
                     <view class='pic'>
-                        <image src='/images/static/house1.jpg'></image>
+                        <image src='/images/static/house4.jpg'></image>
                     </view>
                     <view class='des'>
                         <text>房屋名称：{{houseInfo.name}}</text>
