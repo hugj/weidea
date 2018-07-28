@@ -1,6 +1,5 @@
 {
     "pages": [
-      "pages/map/map",
         "pages/welcome/welcome",
         "pages/rentered/complete",
         "pages/sign/sign",
@@ -16,6 +15,7 @@
         "pages/landlord/landlord",
         "pages/houseDetail/detail",
         "pages/publish/pub",
+        "pages/map/map",
         "pages/myContract/my"
     ],
     "window": {
