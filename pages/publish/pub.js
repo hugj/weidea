@@ -101,6 +101,7 @@ Page({
     toSuccess: function () {
         var that = this;
         this.setData({houseInfo: {
+          id: that.data.houseid,
           name: that.data.houseName,
           certificate: that.data.houseCertificate,
           type: that.data.houseType,
@@ -202,6 +203,11 @@ Page({
               that.setData({
                 houseid: res.data
               })
+              // console.log(that.data.houseInfo)
+            },
+            fail: function (res) {
+              console.log(res)
+              
             }
           })
         }
