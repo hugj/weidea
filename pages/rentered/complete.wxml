@@ -1,8 +1,9 @@
 <!--支付完成页面-->
 <view class='container'>
     <view class='show'>
-        <!-- <image src='/images/'></image> -->
+        
         支付完成！
+        <image src='/images/static/congra.png' mode='widthFix'></image>
     </view>
     <view class='tips'>
         <text space="emsp">  友情提醒：为了保证合约的真实性和有效性，您的租赁智能合约已上传至We链盟，可在个人界面中进行详情查看！</text>

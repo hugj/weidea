@@ -82,9 +82,9 @@
 
                     </view>
                     <view class='contract-content'>
-                        <view>
+                        <!-- <view>
                             <text>房屋租赁合同</text>
-                        </view>
+                        </view> -->
                         <textarea></textarea>
                     </view>
                 </view>
