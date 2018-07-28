@@ -26,7 +26,7 @@ Page({
             })
             if (self.data.countdownTime==0){
                 wx.redirectTo({
-                    url: '../myContract/my',
+                  url: '../user/user',
                 })
             }
         },1000)
@@ -83,8 +83,8 @@ Page({
   },
 
   try:function(){
-      wx.navigateTo({
-          url: '../index/index'
-      })
+    wx.redirectTo({
+      url: '../user/user',
+    })
   },
 })

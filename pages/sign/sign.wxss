@@ -205,15 +205,16 @@ page .container{
 
 }
 
-.contract-content textarea{
+.contract-content scroll-view{
     width:90%;
-    height:700rpx;
+    height:900rpx;
     margin:10rpx auto;
     /* border:1px solid #194EA0; */
     border-radius: 15rpx;
     box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 2px 2px 1px rgba(200, 200, 200, 0.8);
+    /* border:1px solid red; */
 }
 
 /*fourth*/
