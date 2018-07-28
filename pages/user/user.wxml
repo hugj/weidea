@@ -18,7 +18,7 @@
             <image class='icon' src='/images/static/assess.png' mode="widthFix"></image>
             <text>我的房屋</text>
         </view>
-        <view class='op-item'>
+        <view class='op-item' bindtap='toContract'>
             <image class='icon' src='/images/static/contract.png' mode="widthFix"></image>
             <text>智能合约</text>
         </view>

@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/myContract/my.js
 Page({
 
   /**
@@ -62,17 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-    home: function () {
-        wx.redirectTo({
-            url: "../index/index"
-        });
-    },
-    toContract:function(){
-        wx.navigateTo({
-            url: "../myContract/my"
-        });
-    }
-    
+  }
 })

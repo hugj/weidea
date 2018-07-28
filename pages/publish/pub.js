@@ -35,7 +35,6 @@ Page({
         houseRentTime: "",
         housePrice: 0,
         houseid: "",
-
         /**房屋配置图片 */
         conf_image:["bed","chest","bath","washing-machine","wifi"]
     },
@@ -145,8 +144,7 @@ Page({
         this.setData({
             conf_image:conf_img
         })
-        console.log(this.data.conf_image)
-        
+        console.log(this.data.conf_image);
     },
 
     //监听房屋名称输入
